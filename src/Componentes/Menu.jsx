@@ -1,8 +1,8 @@
 import React from "react";
-import '../css/plugins/swiper-bundle.min.css';
-import '../css/plugins/glightbox.min.css';
-import '../css/vendor/bootstrap.min.css';
-import '../css/style.css';
+import '../assets/css/plugins/swiper-bundle.min.css';
+import '../assets/css/plugins/glightbox.min.css';
+import '../assets/css/vendor/bootstrap.min.css';
+import '../assets/css/style.css';
 
 const Menu = () => {
     return(
