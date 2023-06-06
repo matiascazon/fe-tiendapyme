@@ -18,7 +18,7 @@ const Index = () => {
         <Section_3></Section_3>
         <Section_4></Section_4>
         <Section_5></Section_5>
-        <Section_6></Section_6>
+        {/* <Section_6></Section_6> */}
     </main>
   )
 }
