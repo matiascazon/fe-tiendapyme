@@ -14,12 +14,12 @@ const Header = () => {
                 <div className="main__header--inner position__relative d-flex justify-content-between align-items-center">
                     <div className="offcanvas__header--menu__open ">
                         <a className="offcanvas__header--menu__open--btn" href="javascript:void(0)">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
                             <span className="visually-hidden">Offcanvas Menu Open</span>
                         </a>
                     </div>
                     <div className="main__logo">
-                        <h1 className="main__logo--title"><a className="main__logo--link" href="index.html"><img className="main__logo--img" src="../assets/img/logo/nav-log.webp" alt="logo-img"/></a></h1>
+                        <h1 className="main__logo--title"><a className="main__logo--link" href="index.html">Tienda Pyme</a></h1>
                     </div>
                     
                     <Menu/>
@@ -29,7 +29,7 @@ const Header = () => {
             </div>
         </div>
     
-        <div className="offcanvas__header" tabindex="-1">
+        <div className="offcanvas__header" tabIndex="-1">
             <div className="offcanvas__inner">
                 <div className="offcanvas__logo">
                     <a className="offcanvas__logo_link" href="index.html">
@@ -119,7 +119,7 @@ const Header = () => {
                     <div className="offcanvas__account--items">
                         <a className="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
                         <span className="offcanvas__account--items__icon"> 
-                            <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/></svg> 
                             </span>
                         <span className="offcanvas__account--items__label">Login / Register</span>
                         </a>
@@ -129,7 +129,7 @@ const Header = () => {
             </div>
         </div>
     
-        <div className="offcanvas__stikcy--toolbar" tabindex="-1">
+        <div className="offcanvas__stikcy--toolbar" tabIndex="-1">
             <ul className="d-flex justify-content-between">
                 <li className="offcanvas__stikcy--toolbar__list">
                     <a className="offcanvas__stikcy--toolbar__btn" href="index.html">
@@ -150,7 +150,7 @@ const Header = () => {
                 <li className="offcanvas__stikcy--toolbar__list ">
                     <a className="offcanvas__stikcy--toolbar__btn search__open--btn" href="javascript:void(0)">
                         <span className="offcanvas__stikcy--toolbar__icon"> 
-                            <svg xmlns="http://www.w3.org/2000/svg"  width="22.51" height="20.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>   
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="22.51" height="20.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/><path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"/></svg>   
                         </span>
                     <span className="offcanvas__stikcy--toolbar__label">Search</span>
                     </a>
@@ -180,12 +180,12 @@ const Header = () => {
             </ul>
         </div>
         
-        <div className="offCanvas__minicart" tabindex="-1">
+        <div className="offCanvas__minicart" tabIndex="-1">
             <div className="minicart__header ">
                 <div className="minicart__header--top d-flex justify-content-between align-items-center">
                     <h3 className="minicart__title"> Shopping Cart</h3>
                     <button className="minicart__close--btn" aria-label="minicart close btn">
-                        <svg className="minicart__close--icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+                        <svg className="minicart__close--icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/></svg>
                     </button>
                 </div>
                 <p className="minicart__header--desc">The organic foods products are limited</p>
@@ -250,7 +250,7 @@ const Header = () => {
             </div>
             <div className="minicart__conditions text-center">
                 <input className="minicart__conditions--input" id="accept" type="checkbox"/>
-                <label className="minicart__conditions--label" for="accept">I agree with the <a className="minicart__conditions--link" href="privacy-policy.html">Privacy And Policy</a></label>
+                <label className="minicart__conditions--label" htmlFor="accept">I agree with the <a className="minicart__conditions--link" href="privacy-policy.html">Privacy And Policy</a></label>
             </div>
             <div className="minicart__button d-flex justify-content-center">
                 <a className="primary__btn minicart__button--link" href="cart.html">View cart</a>
@@ -258,18 +258,18 @@ const Header = () => {
             </div>
         </div>
     
-        <div className="predictive__search--box " tabindex="-1">
+        <div className="predictive__search--box " tabIndex="-1">
             <div className="predictive__search--box__inner">
                 <h2 className="predictive__search--title">Search Products</h2>
                 <form className="predictive__search--form" action="#">
                     <label>
                         <input className="predictive__search--input" placeholder="Search Here" type="text"/>
                     </label>
-                    <button className="predictive__search--button" aria-label="search button"><svg className="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="30.51" height="25.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>  </button>
+                    <button className="predictive__search--button" aria-label="search button"><svg className="header__search--button__svg" xmlns="http://www.w3.org/2000/svg" width="30.51" height="25.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/><path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"/></svg>  </button>
                 </form>
             </div>
             <button className="predictive__search--close__btn" aria-label="search close btn">
-                <svg className="predictive__search--close__icon" xmlns="http://www.w3.org/2000/svg" width="40.51" height="30.443"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+                <svg className="predictive__search--close__icon" xmlns="http://www.w3.org/2000/svg" width="40.51" height="30.443"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/></svg>
             </button>
         </div>   
 </header>

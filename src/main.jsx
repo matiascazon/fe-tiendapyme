@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './pages/Layout'
-import Index from './pages/Index'
+import Index, { loader as loaderProductos } from './pages/Index'
 
 const router = createBrowserRouter([
   {
@@ -12,6 +12,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Index></Index>,
+        loader: loaderProductos,
       }
 
     ]
