@@ -13,9 +13,9 @@ const Section_4 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../src/assets/img/banner/banner6.webp" alt="banner-img"/>
                             <div class="banner__items--content__style2 right">
-                                <h2 class="banner__items--content__style2--title">Single Stylish <br/>
-                                    Mini Chair </h2>
-                                <span class="banner__items--content__link primary__btn style2">Order Now</span>
+                                <h2 class="banner__items--content__style2--title">Individual <br/>
+                                    Mini Silla </h2>
+                                <span class="banner__items--content__link primary__btn style2">Comprar Ahora</span>
                             </div>
                         </a>
                     </div>
@@ -24,9 +24,9 @@ const Section_4 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../src/assets/img/banner/banner7.webp" alt="banner-img"/>
                             <div class="banner__items--content__style2 right">
-                                <h2 class="banner__items--content__style2--title">New Furniture <br/>
-                                    Tree Planet </h2>
-                                <span class="banner__items--content__link primary__btn style2">Order Now</span>  
+                                <h2 class="banner__items--content__style2--title">Nuevos Muebles <br/>
+                                    Planeta árbol</h2>
+                                <span class="banner__items--content__link primary__btn style2">Comprar Ahora</span>  
                             </div>
                         </a>
                     </div>
@@ -35,9 +35,9 @@ const Section_4 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../src/assets/img/banner/banner8.webp" alt="banner-img"/>
                             <div class="banner__items--content__style2">
-                                <h2 class="banner__items--content__style2--title">Single Stylish <br/>
-                                    Mini Chair </h2>
-                                <span class="banner__items--content__link primary__btn style2">Order Now</span>   
+                                <h2 class="banner__items--content__style2--title">Individual <br/>
+                                    Mini Silla </h2>
+                                <span class="banner__items--content__link primary__btn style2">Comprar Ahora</span>   
                             </div>
                         </a>
                     </div>

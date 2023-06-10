@@ -12,7 +12,7 @@ const Section_5 = () => {
                 <div class="col-xl-8 col-12 product__col--width__8">
                     <div class="product__section--wrapper">
                         <div class="section__heading style2 position__relative border-bottom mb-35">
-                            <h2 class="section__heading--maintitle">Wooden Furniture</h2>
+                            <h2 class="section__heading--maintitle">Muebles de madera</h2>
                             <img class="section__heading--position__img" src="../../src/assets/img/other/heading-shape-img.webp" alt="heading-shape-img"/>
                         </div>
                         <div class="product__section--inner">
@@ -25,7 +25,7 @@ const Section_5 = () => {
                                                 <img class="product__items--img product__secondary--img" src="../../src/assets/img/product/product2.webp" alt="product-img"/>
                                             </a>
                                             <div class="product__badge">
-                                                <span class="product__badge--items sale">New</span>
+                                                <span class="product__badge--items sale">Nuevo</span>
                                             </div>
                                             
                                             <ul class="product__items--action d-flex justify-content-center">
@@ -64,12 +64,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Fashion Chair</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">silla de moda</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$150.00</span>
                                                 <span class="old__price style2">$200.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,12 +116,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Globe Electric</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">globo eléctrico</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$160.00</span>
                                                 <span class="old__price style2">$210.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ const Section_5 = () => {
                                                 <img class="product__items--img product__secondary--img" src="../../src/assets/img/product/product6.webp" alt="product-img"/>
                                             </a>
                                             <div class="product__badge">
-                                                <span class="product__badge--items sale">New</span>
+                                                <span class="product__badge--items sale">Nuevo</span>
                                             </div>
                                             <ul class="product__items--action d-flex justify-content-center">
                                                 <li class="product__items--action__list">
@@ -171,12 +171,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Swivel Chair</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Silla giratoria</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$165.00</span>
                                                 <span class="old__price style2">$190.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -223,12 +223,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Plastic Chair</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Silla de plástico</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$175.00</span>
                                                 <span class="old__price style2">$215.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@ const Section_5 = () => {
                                                 <img class="product__items--img product__secondary--img" src="../../src/assets/img/product/product10.webp" alt="product-img"/>
                                             </a>
                                             <div class="product__badge">
-                                                <span class="product__badge--items sale">New</span>
+                                                <span class="product__badge--items sale">Nuevo</span>
                                             </div>
                                             <ul class="product__items--action d-flex justify-content-center">
                                                 <li class="product__items--action__list">
@@ -278,12 +278,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Folding Tables</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Mesas Plegables</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$145.00</span>
                                                 <span class="old__price style2">$180.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -330,12 +330,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Tables Chairs</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Mesas Sillas</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$170.00</span>
                                                 <span class="old__price style2">$220.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -347,7 +347,7 @@ const Section_5 = () => {
                                                 <img class="product__items--img product__secondary--img" src="../../src/assets/img/product/product14.webp" alt="product-img"/>
                                             </a>
                                             <div class="product__badge">
-                                                <span class="product__badge--items sale">New</span>
+                                                <span class="product__badge--items sale">Nuevo</span>
                                             </div>
                                             <ul class="product__items--action d-flex justify-content-center">
                                                 <li class="product__items--action__list">
@@ -385,12 +385,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Fabric Chair</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">silla de tela</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$178.00</span>
                                                 <span class="old__price style2">$198.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -437,12 +437,12 @@ const Section_5 = () => {
                                                     <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 4</span></a></li>
                                                 </ul>
                                             </div>
-                                            <h3 class="product__items--content__title h4"><a href="product-details.html">Fashion Chair</a></h3>
+                                            <h3 class="product__items--content__title h4"><a href="product-details.html">silla de moda</a></h3>
                                             <div class="product__items--price style2">
                                                 <span class="current__price style2">$168.00</span>
                                                 <span class="old__price style2">$212.00</span>
                                             </div>
-                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Add to cart </a>
+                                            <a class="product__cart--btn__style2 primary__btn" href="cart.html">  Añadir al carrito </a>
                                         </div>
                                     </div>
                                 </div>
@@ -454,10 +454,10 @@ const Section_5 = () => {
                     <div class="deals__banner--thumbnail">
                         <a class="deals__banner--thumbnail__link display-block position__relative" href="shop.html"><img class="deals__banner--thumbnail__img display-block" src="../../src/assets/img/banner/banner9.webp" alt="deals-thumbnail-img"/>
                             <div class="deals__banner--content text-center">
-                                <h2 class="deals__banner--content__maintitle h3">Bring Beauty With <br/>
+                                <h2 class="deals__banner--content__maintitle h3">Trae belleza con <br/>
                                     Furniture Tree </h2>
                                 <div class="deals__banner--countdown d-flex justify-content-center" data-countdown="Sep 30, 2022 00:00:00"></div>
-                                <span class="primary__btn style2">Order Now</span>
+                                <span class="primary__btn style2">Comprar Ahora</span>
                             </div>
                         </a>
                     </div>

@@ -16,12 +16,12 @@ const Section_1 = () => {
                             <div class="row row-cols-1">
                                 <div class="col">
                                     <div class="slider__content">
-                                        <p class="slider__content--desc desc1 text-white mb-15">Discover our best furniture collection from home</p> 
-                                        <h2 class="slider__content--maintitle text-white h1">Stylish Furniture <br/>
-                                            Bring Beauti</h2>
-                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
-                                            and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                        <a class="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                        <p class="slider__content--desc desc1 text-white mb-15">Descubre nuestra mejor colección de muebles de casa</p> 
+                                        <h2 class="slider__content--maintitle text-white h1">Muebles con estilo <br/>
+                                            traer belleza</h2>
+                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Los grandes muebles pueden traer belleza a su hogar, así que compre nuestros populares <br/>
+                                            y elegantes muebles. Ahora obtienes hasta un 100% de descuento ahora.</p>    
+                                        <a class="slider__content--btn primary__btn" href="shop.html">Empezar a comprar</a>
                                     </div>
                                 </div>
                             </div>
@@ -36,12 +36,12 @@ const Section_1 = () => {
                             <div class="row">
                                 <div class="col-lg-6 offset-lg-6">
                                     <div class="slider__content text-center">
-                                        <p class="slider__content--desc desc1 right text-white mb-15">Discover our best furniture collection from home</p> 
-                                        <h2 class="slider__content--maintitle text-white h1">Stylish Furniture <br/>
-                                            Bring Beauti</h2>
-                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
-                                            and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                        <a class="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                        <p class="slider__content--desc desc1 right text-white mb-15">Descubre nuestra mejor colección de muebles de casa</p> 
+                                        <h2 class="slider__content--maintitle text-white h1">Muebles con estilo <br/>
+                                        traer belleza</h2>
+                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Los grandes muebles pueden traer belleza a su hogar, así que compre nuestros populares <br/>
+                                            y elegantes muebles. Ahora obtienes hasta un 100% de descuento ahora.</p>     
+                                        <a class="slider__content--btn primary__btn" href="shop.html">Empezar a comprar</a>
                                     </div>
                                 </div>
                             </div>
@@ -56,12 +56,12 @@ const Section_1 = () => {
                             <div class="row row-cols-1">
                                 <div class="col">
                                     <div class="slider__content">
-                                        <p class="slider__content--desc desc1 text-white mb-15">Discover our best furniture collection from home</p> 
-                                        <h2 class="slider__content--maintitle text-white h1">Stylish Furniture <br/>
-                                            Bring Beauti</h2>
-                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
-                                            and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                        <a class="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                        <p class="slider__content--desc desc1 text-white mb-15">Descubre nuestra mejor colección de muebles de casa</p> 
+                                        <h2 class="slider__content--maintitle text-white h1">Muebles con estilo <br/>
+                                        traer belleza</h2>
+                                        <p class="slider__content--desc text-white mb-35 d-sm-2-none">Los grandes muebles pueden traer belleza a su hogar, así que compre nuestros populares <br/>
+                                            y elegantes muebles. Ahora obtienes hasta un 100% de descuento ahora.</p>   
+                                        <a class="slider__content--btn primary__btn" href="shop.html">Empezar a comprar</a>
                                     </div>
                                 </div>
                             </div>

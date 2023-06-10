@@ -10,13 +10,13 @@ const Section_3 = () => {
     <section class="product__section section--padding pt-0">
         <div class="container-fluid">
             <div class="section__heading text-center mb-30">
-                <h2 class="section__heading--maintitle">Most Popular Items</h2>
+                <h2 class="section__heading--maintitle">Artículos más populares</h2>
             </div>
             <ul class="product__tab--btn d-flex justify-content-center mb-50">
-                <li class="product__tab--btn__list  active" data-toggle="tab" data-target="#chair">Chair </li>
+                <li class="product__tab--btn__list  active" data-toggle="tab" data-target="#chair">Silla </li>
                 <li class="product__tab--btn__list" data-toggle="tab" data-target="#sofa">Sofa </li>
-                <li class="product__tab--btn__list" data-toggle="tab" data-target="#lamp">Lamp </li>
-                <li class="product__tab--btn__list" data-toggle="tab" data-target="#table">Table </li>
+                <li class="product__tab--btn__list" data-toggle="tab" data-target="#lamp">Lámpara </li>
+                <li class="product__tab--btn__list" data-toggle="tab" data-target="#table">Mesa </li>
                 <li class="product__tab--btn__list" data-toggle="tab" data-target="#monitor">Monitor </li>
             </ul>
             <div class="tab_content">
@@ -31,7 +31,7 @@ const Section_3 = () => {
                                             <img class="product__items--img product__secondary--img" src="../../src/assets/img/product/product2.webp" alt="product-img"/>
                                         </a>
                                         <div class="product__badge">
-                                            <span class="product__badge--items sale">New</span>
+                                            <span class="product__badge--items sale">Nuevo</span>
                                         </div>
                                         <ul class="product__items--action d-flex justify-content-center">
                                             <li class="product__items--action__list">
@@ -69,7 +69,7 @@ const Section_3 = () => {
                                                 <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 3</span></a></li>
                                             </ul>
                                         </div>
-                                        <h3 class="product__items--content__title h4"><a href="product-details.html">Fashion Plastic Chair</a></h3>
+                                        <h3 class="product__items--content__title h4"><a href="product-details.html">Silla de plástico de moda</a></h3>
                                         <div class="product__items--price">
                                             <span class="current__price">$150.00</span>
                                             <span class="old__price">$200.00</span>
@@ -78,7 +78,7 @@ const Section_3 = () => {
                                             <svg class="product__items--action__cart--btn__icon" xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565" viewBox="0 0 18.897 21.565">
                                                 <path  d="M16.84,8.082V6.091a4.725,4.725,0,1,0-9.449,0v4.725a.675.675,0,0,0,1.35,0V9.432h5.4V8.082h-5.4V6.091a3.375,3.375,0,0,1,6.75,0v4.691a.675.675,0,1,0,1.35,0V9.433h3.374V21.581H4.017V9.432H6.041V8.082H2.667V21.641a1.289,1.289,0,0,0,1.289,1.29h16.32a1.289,1.289,0,0,0,1.289-1.29V8.082Z" transform="translate(-2.667 -1.366)" fill="currentColor"></path>
                                             </svg>
-                                            <span class="add__to--cart__text"> Add to cart</span>
+                                            <span class="add__to--cart__text"> Añadir al carrito</span>
                                         </a>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@ const Section_3 = () => {
                                                 <li class="product__items--color__list"><a class="product__items--color__link four" href="javascript:void(0)"><span class="visually-hidden">Color 3</span></a></li>
                                             </ul>
                                         </div>
-                                        <h3 class="product__items--content__title h4"><a href="product-details.html">Modern Fabric Chair</a></h3>
+                                        <h3 class="product__items--content__title h4"><a href="product-details.html">Silla de tela moderna</a></h3>
                                         <div class="product__items--price">
                                             <span class="current__price">$165.00</span>
                                             <span class="old__price">$210.00</span>
@@ -152,7 +152,7 @@ const Section_3 = () => {
                                             <svg class="product__items--action__cart--btn__icon" xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565" viewBox="0 0 18.897 21.565">
                                                 <path  d="M16.84,8.082V6.091a4.725,4.725,0,1,0-9.449,0v4.725a.675.675,0,0,0,1.35,0V9.432h5.4V8.082h-5.4V6.091a3.375,3.375,0,0,1,6.75,0v4.691a.675.675,0,1,0,1.35,0V9.433h3.374V21.581H4.017V9.432H6.041V8.082H2.667V21.641a1.289,1.289,0,0,0,1.289,1.29h16.32a1.289,1.289,0,0,0,1.289-1.29V8.082Z" transform="translate(-2.667 -1.366)" fill="currentColor"></path>
                                             </svg>
-                                            <span class="add__to--cart__text"> Add to cart</span>
+                                            <span class="add__to--cart__text"> Añadir al carrito</span>
                                         </a>
                                     </div>
                                 </div>

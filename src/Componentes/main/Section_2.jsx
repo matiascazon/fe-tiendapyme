@@ -13,7 +13,7 @@ const Section_2 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../../src/assets/img/banner/banner1.webp" alt="banner-img"/>
                             <div class="banner__items--content one">
-                                <h2 class="banner__items--content__title">White Minimalist <br/>
+                                <h2 class="banner__items--content__title">Minimalista Blanco<br/>
                                     Combo Sofa </h2>
                             </div>
                         </a>
@@ -23,8 +23,8 @@ const Section_2 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../../src/assets/img/banner/banner2.webp" alt="banner-img"/>
                             <div class="banner__items--content two">
-                                <h2 class="banner__items--content__title">Modern Stylish <br/>
-                                    Single Sofa</h2>
+                                <h2 class="banner__items--content__title">Moderno con Estilo <br/>
+                                    Sofa Simple</h2>
                             </div>
                         </a>
                     </div>
@@ -33,8 +33,8 @@ const Section_2 = () => {
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../../src/assets/img/banner/banner3.webp" alt="banner-img"/>
                             <div class="banner__items--content three">
-                                <h2 class="banner__items--content__title">Larger Minimal <br/>
-                                    Wooden Chair </h2>
+                                <h2 class="banner__items--content__title">Mínima más grande <br/>
+                                    Silla de madera </h2>
                             </div>
                         </a>
                     </div>
@@ -43,15 +43,15 @@ const Section_2 = () => {
                     <div class="banner__items mb-25">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../../src/assets/img/banner/banner4.webp" alt="banner-img"/>
                             <div class="banner__items--content four">
-                                <h2 class="banner__items--content__title four">Family Package <br/>
-                                    Sofa Set</h2>
+                                <h2 class="banner__items--content__title four">Paquete Familiar <br/>
+                                    Juego de sofás</h2>
                             </div>
                         </a>
                     </div>
                     <div class="banner__items">
                         <a class="banner__items--thumbnail position__relative" href="shop.html"><img class="banner__items--thumbnail__img" src="../../../src/assets/img/banner/banner5.webp" alt="banner-img"/>
                             <div class="banner__items--content five">
-                                <h2 class="banner__items--content__title">White Minimalist <br/>
+                                <h2 class="banner__items--content__title">Minimalista Blanco <br/>
                                     Combo Sofa</h2>
                             </div>
                         </a>
