@@ -1,21 +1,20 @@
-import '../../assets/css/plugins/swiper-bundle.min.css';
-import '../../assets/css/plugins/glightbox.min.css';
 import '../../assets/css/vendor/bootstrap.min.css';
 import '../../assets/css/style.css';
 import { useEffect } from "react";
 import Swiper from "swiper";
-
 const Section_1 = () => {
     
     useEffect(() => {
         const swiper = new Swiper(".hero__slider--activation", {
-          // Configuración de Swiper
+          
+        // Configuración de Swiper
           slidesPerView: 1,
           loop: true,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+          
         });
 
         return () => {

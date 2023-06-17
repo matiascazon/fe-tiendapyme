@@ -6,6 +6,7 @@ import Index, { loader as loaderProductos } from './pages/Index'
 import Login from './pages/Login'
 import ProductoDetallePage from './pages/ProductoDetallePage'
 import ErrorPage from './pages/ErrorPage'
+import CarritoProvider from './context/contextCarrito'
 
 
 
@@ -40,8 +41,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider
-      router={router}
-    ></RouterProvider>
+    <CarritoProvider>
+      <RouterProvider
+        router={router}
+      ></RouterProvider>
+    </CarritoProvider>    
   </React.StrictMode>,
 )
