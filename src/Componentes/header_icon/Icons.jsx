@@ -7,6 +7,7 @@ import Search from './Search';
 import User from './User';
 import Wishlist from './Wishlist';
 import Cart from './Cart';
+import Carrito from '../carrito/Carrito';
 
 function Icons() {
   return (
@@ -15,7 +16,8 @@ function Icons() {
             <Search/>
             <User/>
             <Wishlist/>
-            <Cart/>
+            {/* <Cart/> */}
+            <Carrito/>
         </ul>
     </div>
   )

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import './../assets/css/plugins/swiper-bundle.min.css';
 import './../assets/css/plugins/glightbox.min.css';
 import './../assets/css/vendor/bootstrap.min.css';
 import './../assets/css/style.css';
 import Menu from '../Componentes/Menu'
 import Icons from "./header_icon/Icons";
+import Carrito from "./carrito/Carrito";
 
 const Header = () => {
+
   return (
     <header className="header__section header__transparent">
         <div className="main__header header__sticky">
@@ -128,9 +130,9 @@ const Header = () => {
                 </nav>
             </div>
         </div>
-    
+        {/* Nota: Hay que crear una componente Toolbar */}
         <div className="offcanvas__stikcy--toolbar" tabIndex="-1">
-            <ul className="d-flex justify-content-between">
+            <ul className="d-flex justify-content-between align-items-center">
                 <li className="offcanvas__stikcy--toolbar__list">
                     <a className="offcanvas__stikcy--toolbar__btn" href="index.html">
                     <span className="offcanvas__stikcy--toolbar__icon"> 
@@ -156,15 +158,9 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="offcanvas__stikcy--toolbar__list">
-                    <a className="offcanvas__stikcy--toolbar__btn minicart__open--btn" href="javascript:void(0)">
-                        <span className="offcanvas__stikcy--toolbar__icon"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18.51" height="15.443" viewBox="0 0 18.51 15.443">
-                            <path  d="M79.963,138.379l-13.358,0-.56-1.927a.871.871,0,0,0-.6-.592l-1.961-.529a.91.91,0,0,0-.226-.03.864.864,0,0,0-.226,1.7l1.491.4,3.026,10.919a1.277,1.277,0,1,0,1.844,1.144.358.358,0,0,0,0-.049h6.163c0,.017,0,.034,0,.049a1.277,1.277,0,1,0,1.434-1.267c-1.531-.247-7.783-.55-7.783-.55l-.205-.8h7.8a.9.9,0,0,0,.863-.651l1.688-5.943h.62a.936.936,0,1,0,0-1.872Zm-9.934,6.474H68.568c-.04,0-.1.008-.125-.085-.034-.118-.082-.283-.082-.283l-1.146-4.037a.061.061,0,0,1,.011-.057.064.064,0,0,1,.053-.025h1.777a.064.064,0,0,1,.063.051l.969,4.34,0,.013a.058.058,0,0,1,0,.019A.063.063,0,0,1,70.03,144.853Zm3.731-4.41-.789,4.359a.066.066,0,0,1-.063.051h-1.1a.064.064,0,0,1-.063-.051l-.789-4.357a.064.064,0,0,1,.013-.055.07.07,0,0,1,.051-.025H73.7a.06.06,0,0,1,.051.025A.064.064,0,0,1,73.76,140.443Zm3.737,0L76.26,144.8a.068.068,0,0,1-.063.049H74.684a.063.063,0,0,1-.051-.025.064.064,0,0,1-.013-.055l.973-4.357a.066.066,0,0,1,.063-.051h1.777a.071.071,0,0,1,.053.025A.076.076,0,0,1,77.5,140.448Z" transform="translate(-62.393 -135.3)" fill="currentColor"/>
-                            </svg> 
-                        </span>
-                        <span className="offcanvas__stikcy--toolbar__label">Cart</span>
-                        <span className="items__count">3</span> 
-                    </a>
+                    
+                    <Carrito/>
+
                 </li>
                 <li className="offcanvas__stikcy--toolbar__list">
                     <a className="offcanvas__stikcy--toolbar__btn" href="wishlist.html">
@@ -179,85 +175,7 @@ const Header = () => {
                 </li>
             </ul>
         </div>
-        
-        <div className="offCanvas__minicart" tabIndex="-1">
-            <div className="minicart__header ">
-                <div className="minicart__header--top d-flex justify-content-between align-items-center">
-                    <h3 className="minicart__title"> Shopping Cart</h3>
-                    <button className="minicart__close--btn" aria-label="minicart close btn">
-                        <svg className="minicart__close--icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/></svg>
-                    </button>
-                </div>
-                <p className="minicart__header--desc">The organic foods products are limited</p>
-            </div>
-            <div className="minicart__product">
-                <div className="minicart__product--items d-flex">
-                    <div className="minicart__thumbnail">
-                        <a href="product-details.html"><img src="assets/img/product/product1.webp" alt="prduct-img"/></a>
-                    </div>
-                    <div className="minicart__text">
-                        <h4 className="minicart__subtitle"><a href="product-details.html">The is Garden Vegetable.</a></h4>
-                        <span className="color__variant"><b>Color:</b> Beige</span>
-                        <div className="minicart__price">
-                            <span className="current__price">$125.00</span>
-                            <span className="old__price">$140.00</span>
-                        </div>
-                        <div className="minicart__text--footer d-flex align-items-center">
-                            <div className="quantity__box minicart__quantity">
-                                <button type="button" className="quantity__value decrease" aria-label="quantity value" value="Decrease Value">-</button>
-                                <label>
-                                    <input type="number" className="quantity__number" value="1" />
-                                </label>
-                                <button type="button" className="quantity__value increase" aria-label="quantity value" value="Increase Value">+</button>
-                            </div>
-                            <button className="minicart__product--remove" aria-label="minicart remove btn">Remove</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="minicart__product--items d-flex">
-                    <div className="minicart__thumbnail">
-                        <a href="product-details.html"><img src="assets/img/product/product2.webp" alt="prduct-img"/></a>
-                    </div>
-                    <div className="minicart__text">
-                        <h4 className="minicart__subtitle"><a href="product-details.html">Fresh Tomatoe is organic.</a></h4>
-                        <span className="color__variant"><b>Color:</b> Green</span>
-                        <div className="minicart__price">
-                            <span className="current__price">$115.00</span>
-                            <span className="old__price">$130.00</span>
-                        </div>
-                        <div className="minicart__text--footer d-flex align-items-center">
-                            <div className="quantity__box minicart__quantity">
-                                <button type="button" className="quantity__value decrease" aria-label="quantity value" value="Decrease Value">-</button>
-                                <label>
-                                    <input type="number" className="quantity__number" value="1" />
-                                </label>
-                                <button type="button" className="quantity__value increase" aria-label="quantity value" value="Increase Value">+</button>
-                            </div>
-                            <button className="minicart__product--remove" aria-label="minicart remove btn">Remove</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="minicart__amount">
-                <div className="minicart__amount_list d-flex justify-content-between">
-                    <span>Sub Total:</span>
-                    <span><b>$240.00</b></span>
-                </div>
-                <div className="minicart__amount_list d-flex justify-content-between">
-                    <span>Total:</span>
-                    <span><b>$240.00</b></span>
-                </div>
-            </div>
-            <div className="minicart__conditions text-center">
-                <input className="minicart__conditions--input" id="accept" type="checkbox"/>
-                <label className="minicart__conditions--label" htmlFor="accept">I agree with the <a className="minicart__conditions--link" href="privacy-policy.html">Privacy And Policy</a></label>
-            </div>
-            <div className="minicart__button d-flex justify-content-center">
-                <a className="primary__btn minicart__button--link" href="cart.html">View cart</a>
-                <a className="primary__btn minicart__button--link" href="checkout.html">Checkout</a>
-            </div>
-        </div>
-    
+         
         <div className="predictive__search--box " tabIndex="-1">
             <div className="predictive__search--box__inner">
                 <h2 className="predictive__search--title">Search Products</h2>
