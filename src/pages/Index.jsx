@@ -18,15 +18,21 @@ export const loader = () => {
 
 const Index = () => {
   const productos = useLoaderData()
+  const productosPrincipal = productos.filter(producto => producto.producto_posicion === 'principal')
+  const productosBanner = productos.filter(producto => producto.producto_posicion === 'banner')
   return (
     <main className="main__content_wrapper">
         <Section_1></Section_1>
-        <Section_2></Section_2>
+        <Section_2
+          productos={productosBanner}
+        ></Section_2>
         <Section_3
-          productos={productos}
+          productos={productosPrincipal}
         ></Section_3>
         <Section_4></Section_4>
-        <Section_5></Section_5>
+        <Section_5
+          productos={productos}
+        ></Section_5>
     </main>
   )
 }

@@ -13,17 +13,22 @@ const Section_3 = ({productos}) => {
             <div className="section__heading text-center mb-30">
                 <h2 className="section__heading--maintitle">Most Popular Items</h2>
             </div>
-            {/* <ul className="product__tab--btn d-flex justify-content-center mb-50">
-                <li className="product__tab--btn__list  active" data-toggle="tab" data-target="#chair">Chair </li>
-                <li className="product__tab--btn__list" data-toggle="tab" data-target="#sofa">Sofa </li>
-                <li className="product__tab--btn__list" data-toggle="tab" data-target="#lamp">Lamp </li>
-                <li className="product__tab--btn__list" data-toggle="tab" data-target="#table">Table </li>
-                <li className="product__tab--btn__list" data-toggle="tab" data-target="#monitor">Monitor </li>
-            </ul> */}
             <div className="tab_content">
                 <div id="chair" className="tab_pane active show">
                     <div className="product__section--inner">
                         <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n30">
+                            {productos.map((producto) => (
+                                <CartaProducto
+                                    key={producto.id}
+                                    producto={producto}
+                                />
+                            ))}
+                            {productos.map((producto) => (
+                                <CartaProducto
+                                    key={producto.id}
+                                    producto={producto}
+                                />
+                            ))}
                             {productos.map((producto) => (
                                 <CartaProducto
                                     key={producto.id}

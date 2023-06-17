@@ -40,6 +40,7 @@ const CartaProducto = ({producto}) => {
                     </li>
                 </ul>
             </div>
+            
             <div className="product__items--content text-center">
                 {/* <div className="product__items--color">
                     <ul className="product__items--color__wrapper d-flex justify-content-center">
