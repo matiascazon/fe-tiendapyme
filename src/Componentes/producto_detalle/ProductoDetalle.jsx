@@ -169,48 +169,6 @@ const ProductoDetalle = () => {
                                 </div>
                                 <p className="product__details--info__desc mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam ullam is recusandae laborum explicabo id sequi quisquam, ab sunt deleniti quidem ea animi facilis quod nostrum odit! Repellendus voluptas suscipit.</p>
                                 <div className="product__variant">
-                                    <div className="product__variant--list mb-20">
-                                        <fieldset className="variant__input--fieldset">
-                                            <legend className="product__variant--title mb-8">Color :</legend>
-                                            <div className="variant__color d-flex">
-                                                <div className="variant__color--list">
-                                                    <input id="color-red1" name="color" type="radio" checked/>
-                                                    <label className="variant__color--value red" for="color-red1" title="Red"><img className="variant__color--value__img" src="assets/img/product/product1.webp" alt="variant-color-img"/></label>
-                                                </div>
-                                                <div className="variant__color--list">
-                                                    <input id="color-red2" name="color" type="radio"/>
-                                                    <label className="variant__color--value red" for="color-red2" title="Black"><img className="variant__color--value__img" src="assets/img/product/product6.webp" alt="variant-color-img"/></label>
-                                                </div>
-                                                <div className="variant__color--list">
-                                                    <input id="color-red3" name="color" type="radio"/>
-                                                    <label className="variant__color--value red" for="color-red3" title="Pink"><img className="variant__color--value__img" src="assets/img/product/product7.webp" alt="variant-color-img"/></label>
-                                                </div>
-                                                <div className="variant__color--list">
-                                                    <input id="color-red4" name="color" type="radio"/>
-                                                    <label className="variant__color--value red" for="color-red4" title="Orange"><img className="variant__color--value__img" src="assets/img/product/product4.webp" alt="variant-color-img"/></label>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div className="product__variant--list mb-20">
-                                        <fieldset className="variant__input--fieldset">
-                                            <legend className="product__variant--title mb-8">Weight :</legend>
-                                            <ul className="variant__size d-flex">
-                                                <li className="variant__size--list">
-                                                    <input id="weight1" name="weight" type="radio" checked/>
-                                                    <label className="variant__size--value red" for="weight1">5 kg</label>
-                                                </li>
-                                                <li className="variant__size--list">
-                                                    <input id="weight2" name="weight" type="radio"/>
-                                                    <label className="variant__size--value red" for="weight2">3 kg</label>
-                                                </li>
-                                                <li className="variant__size--list">
-                                                    <input id="weight3" name="weight" type="radio"/>
-                                                    <label className="variant__size--value red" for="weight3">2 kg</label>
-                                                </li>
-                                            </ul>
-                                        </fieldset>
-                                    </div>
                                     <div className="product__variant--list quantity d-flex align-items-center mb-20">
                                         <div className="quantity__box">
                                             <button type="button" className="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value">-</button>
