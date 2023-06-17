@@ -4,6 +4,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Index, { loader as loaderProductos } from './pages/Index'
 import Login from './pages/Login'
+import ProductoDetallePage from './pages/ProductoDetallePage'
+import ErrorPage from './pages/ErrorPage'
+
+
 
 const router = createBrowserRouter([
   {
@@ -19,7 +23,16 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login/>
+      },
+      {
+        path: "/producto",
+        element: <ProductoDetallePage/>
+      },
+      {
+        path: "/error",
+        element: <ErrorPage/>
       }
+
 
     ]
   }
