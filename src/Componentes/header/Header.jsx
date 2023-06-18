@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import './../assets/css/plugins/swiper-bundle.min.css';
-import './../assets/css/plugins/glightbox.min.css';
-import './../assets/css/vendor/bootstrap.min.css';
-import './../assets/css/style.css';
-import Menu from '../Componentes/Menu'
+import './../../assets/css/vendor/bootstrap.min.css';
+import './../../assets/css/style.css';
+import Menu from './Menu'
 import Icons from "./header_icon/Icons";
-import Carrito from "./carrito/Carrito";
+import Carrito from './../carrito/Carrito'
+import MenuMobile from "./MenuMobile";
+import { Link } from "react-router-dom";
+
+
 
 const Header = () => {
 
@@ -14,14 +16,11 @@ const Header = () => {
         <div className="main__header header__sticky">
             <div className="container-fluid">
                 <div className="main__header--inner position__relative d-flex justify-content-between align-items-center">
-                    <div className="offcanvas__header--menu__open ">
-                        <a className="offcanvas__header--menu__open--btn" href="javascript:void(0)">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
-                            <span className="visually-hidden">Offcanvas Menu Open</span>
-                        </a>
-                    </div>
+                    
+                    <MenuMobile/>
+
                     <div className="main__logo">
-                        <h1 className="main__logo--title"><a className="main__logo--link" href="index.html">Tienda Pyme</a></h1>
+                        <h1 className="main__logo--title"><Link className="main__logo--link" to='/'>Tienda Pyme</Link></h1>
                     </div>
                     
                     <Menu/>
@@ -31,7 +30,7 @@ const Header = () => {
             </div>
         </div>
     
-        <div className="offcanvas__header" tabIndex="-1">
+        {/* <div className="offcanvas__header" tabIndex="-1">
             <div className="offcanvas__inner">
                 <div className="offcanvas__logo">
                     <a className="offcanvas__logo_link" href="index.html">
@@ -129,7 +128,8 @@ const Header = () => {
 
                 </nav>
             </div>
-        </div>
+        </div> */}
+
         {/* Nota: Hay que crear una componente Toolbar */}
         <div className="offcanvas__stikcy--toolbar" tabIndex="-1">
             <ul className="d-flex justify-content-between align-items-center">
@@ -150,7 +150,7 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="offcanvas__stikcy--toolbar__list ">
-                    <a className="offcanvas__stikcy--toolbar__btn search__open--btn" href="javascript:void(0)">
+                    <a className="offcanvas__stikcy--toolbar__btn search__open--btn" >
                         <span className="offcanvas__stikcy--toolbar__icon"> 
                             <svg xmlns="http://www.w3.org/2000/svg"  width="22.51" height="20.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/><path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"/></svg>   
                         </span>
@@ -190,7 +190,7 @@ const Header = () => {
                 <svg className="predictive__search--close__icon" xmlns="http://www.w3.org/2000/svg" width="40.51" height="30.443"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/></svg>
             </button>
         </div>   
-</header>
+    </header>
   )
 }
 

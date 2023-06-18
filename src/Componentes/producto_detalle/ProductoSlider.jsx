@@ -27,7 +27,7 @@ const ProductoSlider = () => {
                                     </div>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -55,10 +55,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Fashion Plastic Chair</a></h3>
@@ -84,7 +84,7 @@ const ProductoSlider = () => {
                                     </a>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -112,10 +112,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Modern Swivel Chair</a></h3>
@@ -144,7 +144,7 @@ const ProductoSlider = () => {
                                     </div>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -172,10 +172,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Design Living Sofa</a></h3>
@@ -201,7 +201,7 @@ const ProductoSlider = () => {
                                     </a>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -229,10 +229,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Plastic Chair Wooden</a></h3>
@@ -261,7 +261,7 @@ const ProductoSlider = () => {
                                     </div>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -289,10 +289,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Folding Tables Chairs</a></h3>
@@ -318,7 +318,7 @@ const ProductoSlider = () => {
                                     </a>
                                     <ul className="product__items--action d-flex justify-content-center">
                                         <li className="product__items--action__list">
-                                            <a className="product__items--action__btn" data-open="modal1" href="javascript:void(0)">
+                                            <a className="product__items--action__btn" data-open="modal1" >
                                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                                                 <span className="visually-hidden">Quick View</span>
                                             </a>
@@ -346,10 +346,10 @@ const ProductoSlider = () => {
                                 <div className="product__items--content text-center">
                                     <div className="product__items--color">
                                         <ul className="product__items--color__wrapper d-flex justify-content-center">
-                                            <li className="product__items--color__list"><a className="product__items--color__link one" href="javascript:void(0)"><span className="visually-hidden">Color 1</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link two" href="javascript:void(0)"><span className="visually-hidden">Color 2</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link three" href="javascript:void(0)"><span className="visually-hidden">Color 3</span></a></li>
-                                            <li className="product__items--color__list"><a className="product__items--color__link four" href="javascript:void(0)"><span className="visually-hidden">Color 4</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link one" ><span className="visually-hidden">Color 1</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link two" ><span className="visually-hidden">Color 2</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link three" ><span className="visually-hidden">Color 3</span></a></li>
+                                            <li className="product__items--color__list"><a className="product__items--color__link four" ><span className="visually-hidden">Color 4</span></a></li>
                                         </ul>
                                     </div>
                                     <h3 className="product__items--content__title h4"><a href="product-details.html">Modern Fabric Chair</a></h3>

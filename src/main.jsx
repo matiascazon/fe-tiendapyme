@@ -7,7 +7,7 @@ import Login from './pages/Login'
 import ProductoDetallePage from './pages/ProductoDetallePage'
 import ErrorPage from './pages/ErrorPage'
 import CarritoProvider from './context/contextCarrito'
-
+import {loader as loaderProducto} from './pages/ProductoDetallePage'
 
 
 const router = createBrowserRouter([
@@ -26,8 +26,9 @@ const router = createBrowserRouter([
         element: <Login/>
       },
       {
-        path: "/producto",
-        element: <ProductoDetallePage/>
+        path: "/productos/:productoId",
+        element: <ProductoDetallePage/>,
+        loader: loaderProducto,
       },
       {
         path: "/error",
