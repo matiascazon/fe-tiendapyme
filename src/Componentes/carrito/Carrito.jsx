@@ -15,7 +15,7 @@ const Carrito = () => {
             setOpen={setOpen}
         />
 
-        <div className={`offCanvas__minicart ${open ? 'active' : ''}`}>
+        <div className={`offCanvas__minicart ${open ? 'active' : 'before'}`}>
             <div className="minicart__header ">
                 <div className="minicart__header--top d-flex justify-content-between align-items-center">
                     <h3 className="minicart__title"> Carrito</h3>
@@ -45,11 +45,11 @@ const Carrito = () => {
             </div>
             <div className="minicart__conditions text-center">
                 <input className="minicart__conditions--input" id="accept" type="checkbox"/>
-                <label className="minicart__conditions--label" htmlFor="accept">I agree with the <a className="minicart__conditions--link" href="privacy-policy.html">Privacy And Policy</a></label>
+                <label className="minicart__conditions--label" htmlFor="accept">Estoy de acuerdo con la <a className="minicart__conditions--link" href="privacy-policy.html">Política y Privacidad</a></label>
             </div>
             <div className="minicart__button d-flex justify-content-center">
-                <a className="primary__btn minicart__button--link" href="#">View cart</a>
-                <a className="primary__btn minicart__button--link" href="#">Checkout</a>
+                <a className="primary__btn minicart__button--link" href="#">Ver carrito</a>
+                <a className="primary__btn minicart__button--link" href="#">Verificar</a>
             </div>
         </div>
     </>

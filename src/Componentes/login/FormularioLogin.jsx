@@ -5,35 +5,35 @@ const FormularioLogin = () => {
     <div className="col">
         <div className="account__login">
             <div className="account__login--header mb-25">
-                <h3 className="account__login--header__title mb-10">Login</h3>
-                <p className="account__login--header__desc">Login if you area a returning customer.</p>
+                <h3 className="account__login--header__title mb-10">Iniciar Sesión</h3>
+                {/* <p className="account__login--header__desc">Login if you area a returning customer.</p> */}
             </div>
             <div className="account__login--inner">
                 <label>
-                    <input className="account__login--input" placeholder="Email Addres" type="email"/>
+                    <input className="account__login--input" placeholder="Correo electrónico" type="email"/>
                 </label>
                 <label>
-                    <input className="account__login--input" placeholder="Password" type="password"/>
+                    <input className="account__login--input" placeholder="Contraseña" type="password"/>
                 </label>
                 <div className="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
                     <div className="account__login--remember position__relative">
                         <input className="checkout__checkbox--input" id="check1" type="checkbox"/>
                         <span className="checkout__checkbox--checkmark"></span>
                         <label className="checkout__checkbox--label login__remember--label" for="check1">
-                            Remember me</label>
+                            Recordarme</label>
                     </div>
-                    <button className="account__login--forgot" type="submit">Forgot Your Password?</button>
+                    <button className="account__login--forgot" type="submit">¿Olvidaste tu contraseña?</button>
                 </div>
-                <button className="account__login--btn primary__btn" type="submit">Login</button>
+                <button className="account__login--btn primary__btn" type="submit">Iniciar Sesión</button>
                 <div className="account__login--divide">
-                    <span className="account__login--divide__text">OR</span>
+                    <span className="account__login--divide__text">O</span>
                 </div>
                 <div className="account__social d-flex justify-content-center mb-15">
                     <a className="account__social--link facebook" target="_blank" href="https://www.facebook.com">Facebook</a>
                     <a className="account__social--link google" target="_blank" href="https://www.google.com">Google</a>
-                    <a className="account__social--link twitter" target="_blank" href="https://twitter.com">Twitter</a>
+                    {/* <a className="account__social--link twitter" target="_blank" href="https://twitter.com">Twitter</a> */}
                 </div>
-                <p className="account__login--signup__text">Don,t Have an Account? <button type="submit">Sign up now</button></p>
+                {/* <p className="account__login--signup__text">Don,t Have an Account? <button type="submit">Sign up now</button></p> */}
             </div>
         </div>
     </div>

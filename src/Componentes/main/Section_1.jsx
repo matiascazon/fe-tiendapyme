@@ -39,7 +39,7 @@ const Section_1 = () => {
                                                 Bring Beauti</h2>
                                                 <p className="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
                                                 and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                                <a className="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                                <a className="slider__content--btn primary__btn" href="shop.html">Comprar Ahora</a>
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@ const Section_1 = () => {
                                                 Bring Beauti</h2>
                                             <p className="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
                                                 and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                            <a className="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                            <a className="slider__content--btn primary__btn" href="shop.html">Comprar Ahora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ const Section_1 = () => {
                                             Bring Beauti</h2>
                                             <p className="slider__content--desc text-white mb-35 d-sm-2-none">Great furniture can bring beauty at your home, So buy our popular <br/>
                                             and stylish furniture. Now you get up to 100 % discount now.</p>    
-                                            <a className="slider__content--btn primary__btn" href="shop.html">Start to Buying</a>
+                                            <a className="slider__content--btn primary__btn" href="shop.html">Comprar Ahora</a>
                                         </div>
                                     </div>
                                 </div>

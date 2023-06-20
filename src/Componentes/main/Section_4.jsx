@@ -15,7 +15,7 @@ const Section_4 = () => {
                             <div className="banner__items--content__style2 right">
                                 <h2 className="banner__items--content__style2--title">Single Stylish <br/>
                                     Mini Chair </h2>
-                                <span className="banner__items--content__link primary__btn style2">Order Now</span>
+                                <span className="banner__items--content__link primary__btn style2">Comprar Ahora</span>
                             </div>
                         </a>
                     </div>
@@ -26,7 +26,7 @@ const Section_4 = () => {
                             <div className="banner__items--content__style2 right">
                                 <h2 className="banner__items--content__style2--title">New Furniture <br/>
                                     Tree Planet </h2>
-                                <span className="banner__items--content__link primary__btn style2">Order Now</span>  
+                                <span className="banner__items--content__link primary__btn style2">Comprar Ahora</span>  
                             </div>
                         </a>
                     </div>
@@ -37,7 +37,7 @@ const Section_4 = () => {
                             <div className="banner__items--content__style2">
                                 <h2 className="banner__items--content__style2--title">Single Stylish <br/>
                                     Mini Chair </h2>
-                                <span className="banner__items--content__link primary__btn style2">Order Now</span>   
+                                <span className="banner__items--content__link primary__btn style2">Comprar Ahora</span>   
                             </div>
                         </a>
                     </div>

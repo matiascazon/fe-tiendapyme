@@ -8,14 +8,14 @@ function Footer_col_1() {
   return (
     <div className="col-lg-3 col-md-6">
         <div className="footer__widget">
-            <h2 className="footer__widget--title sm__footer--widget__bock">About Us <button className="footer__widget--button" aria-label="footer widget button"></button>
+            <h2 className="footer__widget--title sm__footer--widget__bock">Nosotros <button className="footer__widget--button" aria-label="footer widget button"></button>
                 <svg className="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
                     <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
                 </svg>
             </h2>
             <div className="footer__widget--inner"> 
-                <a className="footer__logo" href="index.html"><img src="assets/img/logo/nav-log.webp" alt="footer-logo"/></a>
-                <p className="footer__widget--desc">Ut enim ad minim veniam, quis <br/> nostrud exercitation ullamco laboris <br/> nisi ut aliquip ex ea commodo.</p>
+                <a className="footer__logo" href="index.html"><img src="assets/img/logo/nav-log.webp" alt="TiendaPyme-logo"/></a>
+                {/* <p className="footer__widget--desc">Ut enim ad minim veniam, quis <br/> nostrud exercitation ullamco laboris <br/> nisi ut aliquip ex ea commodo.</p> */}
                 <div className="footer__social">
                     <ul className="social__shear d-flex">
                         <li className="social__shear--list">
@@ -26,14 +26,14 @@ function Footer_col_1() {
                                 <span className="visually-hidden">Facebook</span>
                             </a>
                         </li>
-                        <li className="social__shear--list">
+                        {/* <li className="social__shear--list">
                             <a className="social__shear--list__icon" target="_blank" href="https://twitter.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.492" viewBox="0 0 24 19.492">
                                     <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M21.533,7.112c.015.213.015.426.015.64A13.9,13.9,0,0,1,7.553,21.746,13.9,13.9,0,0,1,0,19.538a10.176,10.176,0,0,0,1.188.061,9.851,9.851,0,0,0,6.107-2.1,4.927,4.927,0,0,1-4.6-3.411,6.2,6.2,0,0,0,.929.076,5.2,5.2,0,0,0,1.294-.167A4.919,4.919,0,0,1,.975,9.168V9.107A4.954,4.954,0,0,0,3.2,9.731,4.926,4.926,0,0,1,1.675,3.152,13.981,13.981,0,0,0,11.817,8.3,5.553,5.553,0,0,1,11.7,7.173a4.923,4.923,0,0,1,8.513-3.365A9.684,9.684,0,0,0,23.33,2.619,4.906,4.906,0,0,1,21.167,5.33,9.861,9.861,0,0,0,24,4.569a10.573,10.573,0,0,1-2.467,2.543Z" transform="translate(0 -2.254)" fill="currentColor"/>
                                 </svg>
                                 <span className="visually-hidden">Twitter</span>
                             </a>
-                        </li>
+                        </li> */}
                         <li className="social__shear--list">
                             <a className="social__shear--list__icon" target="_blank" href="https://www.instagram.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.497" height="19.492" viewBox="0 0 19.497 19.492">
@@ -42,14 +42,14 @@ function Footer_col_1() {
                                 <span className="visually-hidden">Instagram</span>
                             </a>
                         </li>
-                        <li className="social__shear--list">
+                        {/* <li className="social__shear--list">
                             <a className="social__shear--list__icon" target="_blank" href="https://www.linkedin.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.419" height="19.419" viewBox="0 0 19.419 19.419">
                                     <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M4.347,19.419H.321V6.454H4.347ZM2.332,4.686A2.343,2.343,0,1,1,4.663,2.332,2.351,2.351,0,0,1,2.332,4.686ZM19.415,19.419H15.4V13.108c0-1.5-.03-3.433-2.093-3.433-2.093,0-2.414,1.634-2.414,3.325v6.42H6.869V6.454H10.73V8.223h.056A4.23,4.23,0,0,1,14.6,6.129c4.075,0,4.824,2.683,4.824,6.168v7.122Z" fill="currentColor"/>
                                 </svg>
                                 <span className="visually-hidden">Linkedin</span>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

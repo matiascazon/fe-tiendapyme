@@ -21,7 +21,7 @@ import { getProducto } from '../data/producto';
           producto={producto}
         />  
         <ProductoDetalleDescripcion/> 
-        <ProductoSlider/>
+        {/* <ProductoSlider/> */}
     </div>
   )
 }
