@@ -7,8 +7,7 @@ import { contextoCarrito } from '../../context/contextCarrito'
 const Carrito = () => {
     const[open,setOpen] = useState(false)
 
-    const {carrito} = useContext(contextoCarrito)
-
+    const {carrito,obtenerPrecioTotal} = useContext(contextoCarrito)
     return (
     <>
         <BotonCarrito
@@ -39,9 +38,9 @@ const Carrito = () => {
                     <span>Sub Total:</span>
                     <span><b>$240.00</b></span>
                 </div> */}
-                <div className="minicart__amount_list d-flex justify-content-between">
+                <div className="minicart__amount_list d-flex justify-content-between" onClick={obtenerPrecioTotal}>
                     <span>Total:</span>
-                    <span><b>$912.00</b></span>
+                    <span><b></b></span>
                 </div>
             </div>
             <div className="minicart__conditions text-center">
