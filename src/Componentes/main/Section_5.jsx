@@ -13,8 +13,7 @@ const Section_5 = ({productos}) => {
                 <div className="col-xl-8 col-12 product__col--width__8">
                     <div className="product__section--wrapper">
                         <div className="section__heading style2 position__relative border-bottom mb-35">
-                            <h2 className="section__heading--maintitle">Wooden Furniture</h2>
-                            <img className="section__heading--position__img" src="../../src/assets/img/other/heading-shape-img.webp" alt="heading-shape-img"/>
+                            <h2 className="section__heading--maintitle">Más Productos</h2>
                         </div>
                         <div className="product__section--inner">
                             <div className="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-4 row-cols-md-3 row-cols-2 mb--n25">
@@ -41,7 +40,7 @@ const Section_5 = ({productos}) => {
                                 <h2 className="deals__banner--content__maintitle h3">Bring Beauty With <br/>
                                     Furniture Tree </h2>
                                 <div className="deals__banner--countdown d-flex justify-content-center" data-countdown="Sep 30, 2022 00:00:00"></div>
-                                <span className="primary__btn style2">Order Now</span>
+                                <span className="primary__btn style2">Comprar Ahora</span>
                             </div>
                         </a>
                     </div>

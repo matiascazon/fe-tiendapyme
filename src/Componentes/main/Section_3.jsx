@@ -11,7 +11,7 @@ const Section_3 = ({productos}) => {
     <section className="product__section section--padding pt-0">
         <div className="container-fluid">
             <div className="section__heading text-center mb-30">
-                <h2 className="section__heading--maintitle">Most Popular Items</h2>
+                <h2 className="section__heading--maintitle">Productos Populares</h2>
             </div>
             <div className="tab_content">
                 <div id="chair" className="tab_pane active show">

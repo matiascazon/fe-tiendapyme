@@ -1,6 +1,7 @@
 import React from "react";
 import './../../assets/css/vendor/bootstrap.min.css';
 import './../../assets/css/style.css';
+import { Link } from "react-router-dom";
 
 const Menu = () => {
     return(
@@ -8,16 +9,16 @@ const Menu = () => {
             <nav className="header__menu--navigation">
                 <ul className="d-flex">
                     <li className="header__menu--items">
-                        <a className="header__menu--link" href="index.html">Home <span className="menu__plus--icon">+</span></a>
-                        <ul className="header__sub--menu">
+                        <Link className="header__menu--link" to={`/`}>Inicio</Link>
+                        {/* <ul className="header__sub--menu">
                             <li className="header__sub--menu__items"><a href="index.html" className="header__sub--menu__link">Home One</a></li>
                             <li className="header__sub--menu__items"><a href="index-2.html" className="header__sub--menu__link">Home Two</a></li>
                             <li className="header__sub--menu__items"><a href="index-3.html" className="header__sub--menu__link">Home Three</a></li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li className="header__menu--items mega__menu--items">
-                        <a className="header__menu--link" href="shop.html">Shop <span className="menu__plus--icon">+</span></a>
-                        <ul className="header__mega--menu d-flex">
+                        <Link className="header__menu--link" to={`/`}>Tiendas</Link>
+                        {/* <ul className="header__mega--menu d-flex">
                             <li className="header__mega--menu__li">
                                 <span className="header__mega--subtitle">Column One</span>
                                 <ul className="header__mega--sub__menu">
@@ -58,12 +59,12 @@ const Menu = () => {
                                     <li className="header__mega--sub__menu_li"><a className="header__mega--sub__menu--title" href="404.html">Error Page</a></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li className="header__menu--items">
-                        <a className="header__menu--link" href="about.html">About US </a>  
+                        <a className="header__menu--link" href="about.html">Productos</a>  
                     </li>
-                    <li className="header__menu--items">
+                    {/* <li className="header__menu--items">
                         <a className="header__menu--link" href="blog.html">Blog <span className="menu__plus--icon">+</span> </a>
                         <ul className="header__sub--menu">
                             <li className="header__sub--menu__items"><a href="blog.html" className="header__sub--menu__link">Blog Grid</a></li>
@@ -71,10 +72,10 @@ const Menu = () => {
                             <li className="header__sub--menu__items"><a href="blog-left-sidebar.html" className="header__sub--menu__link">Blog Left Sidebar</a></li>
                             <li className="header__sub--menu__items"><a href="blog-right-sidebar.html" className="header__sub--menu__link">Blog Right Sidebar</a></li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li className="header__menu--items">
-                        <a className="header__menu--link " href="#">Pages <span className="menu__plus--icon">+</span></a>
-                        <ul className="header__sub--menu">
+                        <Link className="header__menu--link " to={`/`}>Sobre Nosotros</Link>
+                        {/* <ul className="header__sub--menu">
                             <li className="header__sub--menu__items"><a href="about.html" className="header__sub--menu__link">About Us</a></li>
                             <li className="header__sub--menu__items"><a href="contact.html" className="header__sub--menu__link">Contact Us</a></li>
                             <li className="header__sub--menu__items"><a href="cart.html" className="header__sub--menu__link">Cart Page</a></li>
@@ -82,10 +83,10 @@ const Menu = () => {
                             <li className="header__sub--menu__items"><a href="wishlist.html" className="header__sub--menu__link">Wishlist Page</a></li>
                             <li className="header__sub--menu__items"><a href="login.html" className="header__sub--menu__link">Login Page</a></li>
                             <li className="header__sub--menu__items"><a href="404.html" className="header__sub--menu__link">Error Page</a></li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li className="header__menu--items">
-                        <a className="header__menu--link" href="contact.html">Contact </a>  
+                        <Link className="header__menu--link" to={`/`}>Contáctanos</Link>  
                     </li>
                 </ul>
             </nav>

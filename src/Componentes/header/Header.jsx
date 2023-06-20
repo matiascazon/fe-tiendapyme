@@ -22,7 +22,7 @@ const Header = () => {
                     <MenuMobile/>
 
                     <div className="main__logo">
-                        <h1 className="main__logo--title"><Link className="main__logo--link" to='/'>Tienda Pyme</Link></h1>
+                        <h1 className="main__logo--title"><Link className="main__logo--link" to={`/`}>Tienda Pyme</Link></h1>
                     </div>
                     
                     <Menu/>
