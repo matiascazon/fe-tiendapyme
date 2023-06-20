@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useReducer } from 'react'
 
 
-const contextoCarrito = createContext()
+export const contextoCarrito = createContext()
 
 const estadoInicial = {
     carrito: [],
@@ -39,21 +39,22 @@ const CarritoReducer = (state,action) => {
         const productoEnCarritoId = state.carrito.findIndex(producto => producto.id === id)
         const nuevoCarrito = [...state.carrito]
         if(productoEnCarritoId !== -1){
-          nuevoCarrito[productoEnCarritoId].cantidad += 1
+          nuevoCarrito[productoEnCarritoId].cantidad++
         }
   
         return {...state,carrito: nuevoCarrito}
   
       case 'DECREMENTAR_CANTIDAD':
         
-          const id1 = action.payload
-          const productoEnCarritoId1 = state.carrito.findIndex(producto => producto.id === id1)
-          const nuevoCarrito1 = [...state.carrito]
-          if(productoEnCarritoId1 !== -1 && nuevoCarrito1[productoEnCarritoId1].cantidad > 0){
-            nuevoCarrito1[productoEnCarritoId1].cantidad--
-          }
-          
-          return {...state,carrito: nuevoCarrito1}
+        const id1 = action.payload
+        const productoEnCarritoId1 = state.carrito.findIndex(producto => producto.id === id1)
+        const nuevoCarrito1 = [...state.carrito]
+        if (productoEnCarritoId1 !== -1 && nuevoCarrito1[productoEnCarritoId1].cantidad > 1) {
+          nuevoCarrito1[productoEnCarritoId1].cantidad -= 1
+        }
+        
+        return { ...state, carrito: nuevoCarrito1 }
+        
         
        
         case 'SET_CARRITO':
@@ -72,8 +73,7 @@ const CarritoReducer = (state,action) => {
 const CarritoProvider = ({children}) => {
 
     const [state,dispatch] = useReducer(CarritoReducer,estadoInicial)
-
-
+    
     useEffect(() => {
         const carritoStorage = localStorage.getItem('carrito');
         if (carritoStorage) {

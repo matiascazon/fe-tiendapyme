@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import '../../assets/css/plugins/glightbox.min.css';
 import '../../assets/css/vendor/bootstrap.min.css';
 import '../../assets/css/style.css';
+import {contextoCarrito} from './../../context/contextCarrito'
 
 const ProductoDetalle = ({producto}) => {
+    
+    const [cantidad,setCantidad] = useState(1)
+    const {agregarProducto,carrito} = useContext(contextoCarrito)
+
+    const agregarProductoHanlder = () => {
+        const nuevoProducto = {
+            id: producto.id,
+            nombre: producto.producto_nombre,
+            precio: producto.producto_valor,
+            imagen: producto.producto_imagen,
+        }
+        const existeProducto = carrito.find(item => item.id === nuevoProducto.id)
+        setCantidad(existeProducto ? existeProducto.cantidad += 1 : cantidad) 
+        agregarProducto(nuevoProducto,cantidad)
+        setCantidad(1)
+    }
+
+    const decrementarCantidadHandler = () => {
+        if(cantidad > 1){
+            setCantidad(cantidad - 1)
+        }
+    }
 
   return (
     <div>
@@ -123,7 +146,7 @@ const ProductoDetalle = ({producto}) => {
                     </div>   
                     <div className="col">
                         <div className="product__details--info">
-                            <form action="#">
+                            {/* <form action="#"> */}
                                 <h2 className="product__details--info__title mb-15">{producto.producto_nombre}</h2>
                                 <div className="product__details--info__price mb-10">
                                     <span className="current__price">{producto.producto_valor}</span>
@@ -173,13 +196,13 @@ const ProductoDetalle = ({producto}) => {
                                 <div className="product__variant">
                                     <div className="product__variant--list quantity d-flex align-items-center mb-20">
                                         <div className="quantity__box">
-                                            <button type="button" className="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value">-</button>
+                                            <button type="button" className="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value" onClick={decrementarCantidadHandler}>-</button>
                                             <label>
-                                                <input type="number" className="quantity__number quickview__value--number" value="1" />
+                                                <input type="number" disabled className="quantity__number quickview__value--number" value={cantidad} />
                                             </label>
-                                            <button type="button" className="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value">+</button>
+                                            <button type="button" className="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" onClick={() => {setCantidad(cantidad + 1)}}>+</button>
                                         </div>
-                                        <button className="quickview__cart--btn primary__btn" type="submit">Add To Cart</button>  
+                                        <button className="quickview__cart--btn primary__btn" onClick={agregarProductoHanlder}>Añadir al Carrito</button>  
                                     </div>
                                     <div className="product__variant--list mb-15">
                                         <a className="variant__wishlist--icon mb-15" href="wishlist.html" title="Add to wishlist">
@@ -230,7 +253,7 @@ const ProductoDetalle = ({producto}) => {
                                     <h5 className="guarantee__safe--checkout__title">Pago seguro garantizado</h5>
                                     <img className="guarantee__safe--checkout__img" src="assets/img/other/safe-checkout.webp" alt="Payment Image"/>
                                 </div>
-                            </form>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
