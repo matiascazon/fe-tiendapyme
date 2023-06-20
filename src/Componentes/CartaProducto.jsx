@@ -8,14 +8,13 @@ import { Link } from 'react-router-dom';
 const CartaProducto = ({producto}) => {
     return (
         <div className="col mb-30">
-        <Link to={`/productos/${producto.id}`}>
             <div className="product__items ">
                 <div className="product__items--thumbnail">
-                    <a className="product__items--link">
+                    <Link className="product__items--link" to={`/productos/${producto.id}`}>
                         <img className="product__items--img product__primary--img" src={`http://vps-3326270-x.dattaweb.com:8055/assets/${producto.producto_imagen}`} alt="product-img"/>
                         <img className="product__items--img product__secondary--img" src={`http://vps-3326270-x.dattaweb.com:8055/assets/${producto.producto_imagen}`} alt="product-img"/>
-                    </a>
-                    <ul className="product__items--action d-flex justify-content-center">
+                    </Link>
+                    {/* <ul className="product__items--action d-flex justify-content-center">
                         <li className="product__items--action__list">
                             <a className="product__items--action__btn" data-open="modal1" >
                                 <svg className="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 00-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 000-17.47C428.89 172.28 347.8 112 255.66 112z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"/></svg>
@@ -40,7 +39,7 @@ const CartaProducto = ({producto}) => {
                                 <span className="visually-hidden">Compare</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 
                 <div className="product__items--content text-center">
@@ -52,12 +51,11 @@ const CartaProducto = ({producto}) => {
                         <svg className="product__items--action__cart--btn__icon" xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565" viewBox="0 0 18.897 21.565">
                             <path  d="M16.84,8.082V6.091a4.725,4.725,0,1,0-9.449,0v4.725a.675.675,0,0,0,1.35,0V9.432h5.4V8.082h-5.4V6.091a3.375,3.375,0,0,1,6.75,0v4.691a.675.675,0,1,0,1.35,0V9.433h3.374V21.581H4.017V9.432H6.041V8.082H2.667V21.641a1.289,1.289,0,0,0,1.289,1.29h16.32a1.289,1.289,0,0,0,1.289-1.29V8.082Z" transform="translate(-2.667 -1.366)" fill="currentColor"></path>
                         </svg>
-                        <span className="add__to--cart__text"> Add to cart</span>
+                        <span className="add__to--cart__text"> Añadir al Carrito</span>
                     </a>
                 </div>
             </div>
-        </Link>
-    </div>
+        </div>
   )
 }
 

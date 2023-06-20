@@ -789,29 +789,29 @@ const offcanvasHeader = function () {
 offcanvasHeader();
 
 // Qunatity Button Activation
-const quantityWrapper = document.querySelectorAll(".quantity__box");
-if (quantityWrapper) {
-  quantityWrapper.forEach(function (singleItem) {
-    let input = singleItem.querySelector(".quantity__number");
-    let increaseButton = singleItem.querySelector(".increase");
-    let decreaseButton = singleItem.querySelector(".decrease");
+// const quantityWrapper = document.querySelectorAll(".quantity__box");
+// if (quantityWrapper) {
+//   quantityWrapper.forEach(function (singleItem) {
+//     let input = singleItem.querySelector(".quantity__number");
+//     let increaseButton = singleItem.querySelector(".increase");
+//     let decreaseButton = singleItem.querySelector(".decrease");
 
-    increaseButton.addEventListener("click", function () {
-      let value = parseInt(input.value, 10);
-      value = isNaN(value) ? 0 : value;
-      value++;
-      input.value = value;
-    });
+//     increaseButton.addEventListener("click", function () {
+//       let value = parseInt(input.value, 10);
+//       value = isNaN(value) ? 0 : value;
+//       value++;
+//       input.value = value;
+//     });
 
-    decreaseButton.addEventListener("click", function () {
-      let value = parseInt(input.value, 10);
-      value = isNaN(value) ? 0 : value;
-      value < 1 ? (value = 1) : "";
-      value--;
-      input.value = value;
-    });
-  });
-}
+//     decreaseButton.addEventListener("click", function () {
+//       let value = parseInt(input.value, 10);
+//       value = isNaN(value) ? 0 : value;
+//       value < 1 ? (value = 1) : "";
+//       value--;
+//       input.value = value;
+//     });
+//   });
+// }
 
 // Modal JS
 const openEls = document.querySelectorAll("[data-open]");
