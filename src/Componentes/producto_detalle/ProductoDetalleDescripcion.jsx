@@ -26,17 +26,17 @@ const ProductoDetalleDescripcion = () => {
                                                     <h4 className="product__tab--content__title">Modern Swivel Chair</h4>
                                                     <p className="product__tab--content__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum,</p>
                                                 </div>
-                                                <div className="product__tab--content__step">
+                                                {/* <div className="product__tab--content__step">
                                                     <h4 className="product__tab--content__title">Fashion Plastic Chair</h4>
                                                     <p className="product__tab--content__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum,</p>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div> 
                                         <div className="product__tab--content__items d-flex align-items-center">
-                                            <div className="product__tab--content__thumbnail">
+                                            {/* <div className="product__tab--content__thumbnail">
                                                 <img className="product__tab--content__thumbnail--img display-block" src="assets/img/product/product2.webp" alt="product-tab"/>
-                                            </div>
-                                            <div className="product__tab--content__right">
+                                            </div> */}
+                                            {/* <div className="product__tab--content__right">
                                                 <div className="product__tab--content__step mb-20">
                                                     <h4 className="product__tab--content__title">Design Living Sofa</h4>
                                                     <p className="product__tab--content__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum,</p>
@@ -45,7 +45,7 @@ const ProductoDetalleDescripcion = () => {
                                                     <h4 className="product__tab--content__title">Folding Tables Chairs</h4>
                                                     <p className="product__tab--content__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum,</p>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div> 
                                     </div> 
                                 </div>
@@ -311,23 +311,23 @@ const ProductoDetalleDescripcion = () => {
                                                 <h4 className="product__tab--content__title mb-10">More Details</h4>
                                                 <ul>
                                                     <li className="product__tab--content__list">
-                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
+                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum?
                                                     </li>
                                                     <li className="product__tab--content__list">
-                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
+                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
                                                         Magnam enim modi, illo harum suscipit tempore aut dolore?
                                                     </li>
                                                     <li className="product__tab--content__list">
-                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
+                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
                                                         Numquam eaque mollitia fugiat laborum dolor tempora;
                                                     </li>
                                                     <li className="product__tab--content__list">
-                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
+                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
                                                         Sit amet consectetur adipisicing elit.  Quo delectus repellat facere maiores.
                                                     </li>
                                                     <li className="product__tab--content__list">
-                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
+                                                        <svg className="product__tab--content__list--icon" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M268 112l144 144-144 144M392 256H100"></path></svg>
                                                         Repellendus itaque sit quia consequuntur, unde veritatis. dolorum?
                                                     </li>
                                                 </ul>

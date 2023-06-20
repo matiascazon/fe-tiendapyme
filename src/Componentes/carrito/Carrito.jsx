@@ -12,7 +12,7 @@ const Carrito = () => {
             setOpen={setOpen}
         />
 
-        <div className={`offCanvas__minicart ${open ? 'active' : ''}`}>
+        <div className={`offCanvas__minicart ${open ? 'active' : 'before'}`}>
             <div className="minicart__header ">
                 <div className="minicart__header--top d-flex justify-content-between align-items-center">
                     <h3 className="minicart__title"> Shopping Cart</h3>
