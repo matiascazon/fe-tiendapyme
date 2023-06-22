@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './../../assets/css/vendor/bootstrap.min.css';
 import './../../assets/css/style.css';
 import Menu from './Menu'
@@ -12,10 +12,27 @@ import Toolbar from "./Toolbar";
 
 
 const Header = () => {
+    const [scrollDown, setScrollDown] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          if (window.scrollY > 0) {
+            setScrollDown(true);
+          } else {
+            setScrollDown(false);
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
 
   return (
     <header className="header__section header__transparent">
-        <div className="main__header header__sticky">
+        <div className={`main__header header__sticky ${scrollDown ? 'sticky' : ''}`}>
             <div className="container-fluid">
                 <div className="main__header--inner position__relative d-flex justify-content-between align-items-center">
                     

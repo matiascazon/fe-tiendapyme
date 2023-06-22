@@ -11,10 +11,12 @@ import { getProducto } from '../data/producto';
   }
   
   const ProductoDetallePage = () => {
+    
     const producto = useLoaderData()
     useEffect(()=>{
       window.scrollTo(0,0)
     },[])
+
   return (
     <div>
         <ProductoDetalle

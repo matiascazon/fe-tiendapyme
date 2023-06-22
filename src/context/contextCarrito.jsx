@@ -115,7 +115,7 @@ const CarritoProvider = ({children}) => {
         dispatch({type: 'DECREMENTAR_CANTIDAD' , payload: id})
     }
     const obtenerPrecioTotal = () => {
-      console.log(localStorage.getItem('precioTotal'))
+      return state.precioTotal
     }
 
   return (

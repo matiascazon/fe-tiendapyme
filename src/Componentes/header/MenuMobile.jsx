@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import BotonMenuMobile from './BotonMenuMobile'
 import { Link } from 'react-router-dom';
 
 const MenuMobile = () => {
     const [open,setOpen] = useState(false)
-
+    // useEffect(() => { //bloquea el scroll desde el css
+    //     if(open){
+    //         document.body.classList.add('mobile_menu_open')
+    //     }else{
+    //         document.body.classList.remove('mobile_menu_open')
+    //     }
+    // },[open])
    return (
 
     <>
@@ -12,6 +18,7 @@ const MenuMobile = () => {
             open={open}
             setOpen={setOpen}
         />
+        { open && <div className='bg_menu_active' onClick={() => {open ? setOpen(false) : setOpen(true)}}></div> }
 
         <div className={`offcanvas__header ${open ? 'open' : '' }`}>
             <div className="offcanvas__inner">
@@ -25,77 +32,14 @@ const MenuMobile = () => {
                     <ul className="offcanvas__menu_ul">
                         <li className="offcanvas__menu_li">
                             <Link className="offcanvas__menu_item" to={`/`} onClick={() => {setOpen(false)}}>Inicio</Link>
-                            {/* <ul className="offcanvas__sub_menu">
-                                <li className="offcanvas__sub_menu_li"><a href="index.html" className="offcanvas__sub_menu_item">Home One</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="index-2.html" className="offcanvas__sub_menu_item">Home Two</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="index-3.html" className="offcanvas__sub_menu_item">Home Three</a></li>
-                            </ul> */}
+                            
                         </li>
                         <li className="offcanvas__menu_li">
                             <a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Tiendas</a>
-                            {/* <ul className="offcanvas__sub_menu">
-                                <li className="offcanvas__sub_menu_li">
-                                    <a href="#" className="offcanvas__sub_menu_item">Column One</a>
-                                    <ul className="offcanvas__sub_menu">
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="shop.html">Shop Left Sidebar</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="shop-grid.html">Shop Grid</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="shop-grid-list.html">Shop Grid List</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="shop-list.html">Shop List</a></li>
-                                    </ul>
-                                </li>
-                                <li className="offcanvas__sub_menu_li">
-                                    <a href="#" className="offcanvas__sub_menu_item">Column Two</a>
-                                    <ul className="offcanvas__sub_menu">
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="product-details.html">Standard Product</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="product-variable.html">Video Product</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="product-variable.html">Variable Product</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="product-gallery.html">Product Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li className="offcanvas__sub_menu_li">
-                                    <a href="#" className="offcanvas__sub_menu_item">Column Three</a>
-                                    <ul className="offcanvas__sub_menu">
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="my-account.html">My Account</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="my-account-2.html">My Account 2</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="404.html">404 Page</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="login.html">Login Page</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="faq.html">Faq Page</a></li>
-                                    </ul>
-                                </li>
-                                <li className="offcanvas__sub_menu_li">
-                                    <a href="#" className="offcanvas__sub_menu_item">Column Four</a>
-                                    <ul className="offcanvas__sub_menu">
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="compare.html">Compare Pages</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="cart.html">Cart Page</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="checkout.html">Checkout page</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="wishlist.html">Wishlist Page</a></li>
-                                        <li className="offcanvas__sub_menu_li"><a className="offcanvas__sub_menu_item" href="404.html">Error Page</a></li>
-                                    </ul>
-                                </li>
-                            </ul> */}
+                            
                         </li>
-                        {/* <li className="offcanvas__menu_li">
-                            <a className="offcanvas__menu_item" href="#">Blog</a>
-                            <ul className="offcanvas__sub_menu">
-                                <li className="offcanvas__sub_menu_li"><a href="blog.html" className="offcanvas__sub_menu_item">Blog Grid</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="blog-details.html" className="offcanvas__sub_menu_item">Blog Details</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="blog-left-sidebar.html" className="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="blog-right-sidebar.html" className="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
-                            </ul>
-                        </li> */}
                         <li className="offcanvas__menu_li">
                             <a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Productos</a>
-                            {/* <ul className="offcanvas__sub_menu">
-                                <li className="offcanvas__sub_menu_li"><a href="about.html" className="offcanvas__sub_menu_item">About Us</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="contact.html" className="offcanvas__sub_menu_item">Contact Us</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="cart.html" className="offcanvas__sub_menu_item">Cart Page</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="portfolio.html" className="offcanvas__sub_menu_item">Portfolio Page</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="wishlist.html" className="offcanvas__sub_menu_item">Wishlist Page</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="login.html" className="offcanvas__sub_menu_item">Login Page</a></li>
-                                <li className="offcanvas__sub_menu_li"><a href="404.html" className="offcanvas__sub_menu_item">Error Page</a></li>
-                            </ul> */}
                         </li>
                         <li className="offcanvas__menu_li"><a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Nosotros</a></li>
                         <li className="offcanvas__menu_li"><a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Contáctanos</a></li>

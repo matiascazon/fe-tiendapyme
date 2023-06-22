@@ -27,6 +27,11 @@ const ProductoDetalle = ({producto}) => {
             setCantidad(cantidad - 1)
         }
     }
+    const incrementarCantidadHandler = () => {
+        if(cantidad < 10){
+            setCantidad(cantidad + 1)
+        }
+    }
 
   return (
     <div>
@@ -200,7 +205,7 @@ const ProductoDetalle = ({producto}) => {
                                             <label>
                                                 <input type="number" disabled className="quantity__number quickview__value--number" value={cantidad} />
                                             </label>
-                                            <button type="button" className="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" onClick={() => {setCantidad(cantidad + 1)}}>+</button>
+                                            <button type="button" className="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" onClick={incrementarCantidadHandler}>+</button>
                                         </div>
                                         <button className="quickview__cart--btn primary__btn" onClick={agregarProductoHanlder}>Añadir al Carrito</button>  
                                     </div>
