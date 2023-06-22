@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import BotonCarrito from './BotonCarrito'
 import ProductoCarrito from './ProductoCarrito'
 import { contextoCarrito } from '../../context/contextCarrito'
@@ -7,20 +7,34 @@ import { contextoCarrito } from '../../context/contextCarrito'
 const Carrito = () => {
     const[open,setOpen] = useState(false)
 
-    const {carrito} = useContext(contextoCarrito)
+    const {carrito,obtenerPrecioTotal} = useContext(contextoCarrito)
 
+    useEffect(() => { //bloquea el scroll desde el css
+        if(open){
+            document.body.classList.add('offCanvas__minicart_active')
+        }else{
+            document.body.classList.remove('offCanvas__minicart_active')
+        }
+    },[open])
+
+    const menuHandler = () => {
+        open ? setOpen(false) : setOpen(true)
+    }
+    
     return (
     <>
         <BotonCarrito
             open={open}
             setOpen={setOpen}
         />
-
-        <div className={`offCanvas__minicart ${open ? 'active' : 'before'}`}>
+        
+        { open && <div className='bg_minicart_active' onClick={menuHandler}></div> }
+        
+        <div className={`offCanvas__minicart ${open ? 'active' : ''}`}>
             <div className="minicart__header ">
                 <div className="minicart__header--top d-flex justify-content-between align-items-center">
                     <h3 className="minicart__title"> Carrito</h3>
-                    <button className="minicart__close--btn" aria-label="minicart close btn" onClick={() => {open ? setOpen(false) : setOpen(true)}}>
+                    <button className="minicart__close--btn" aria-label="minicart close btn" onClick={menuHandler}>
                         <svg className="minicart__close--icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"/></svg>
                     </button>
                 </div>
@@ -41,7 +55,7 @@ const Carrito = () => {
                 </div> */}
                 <div className="minicart__amount_list d-flex justify-content-between">
                     <span>Total:</span>
-                    <span><b>$912.00</b></span>
+                    <span><b> ${obtenerPrecioTotal()}</b></span>
                 </div>
             </div>
             <div className="minicart__conditions text-center">

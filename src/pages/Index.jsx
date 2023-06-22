@@ -17,6 +17,10 @@ export const loader = () => {
 }
 
 const Index = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   const productos = useLoaderData()
   const productosPrincipal = productos.filter(producto => producto.producto_posicion === 'principal')
   const productosBanner = productos.filter(producto => producto.producto_posicion === 'banner')

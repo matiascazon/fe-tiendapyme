@@ -6,9 +6,9 @@ import { contextoCarrito } from '../../context/contextCarrito';
 const ProductoCarrito = ({producto}) => {
     const {incrementarCantidad,decrementarCantidad,eliminarProducto} = useContext(contextoCarrito)
     const incrementarCantidadHandler = () => {
-        // console.log(producto.cantidad)
-        incrementarCantidad(producto.id)
-        
+            if(producto.cantidad < 10){
+                incrementarCantidad(producto.id)
+            }  
     }
     const decrementarCantidadHandler = () => {
         decrementarCantidad(producto.id)
