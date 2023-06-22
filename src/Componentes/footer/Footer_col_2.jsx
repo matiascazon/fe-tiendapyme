@@ -16,7 +16,7 @@ function Footer_col_2() {
           </h2>
           <ul className="footer__widget--menu footer__widget--inner">
               <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to="/">Sobre Nosotros</Link></li>
-              <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to="/">Favoritos</Link></li>
+              <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to={`/deseados`}>Lista de Deseos</Link></li>
               <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to="/">Contáctanos</Link></li>
               <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to="/">Politica de Privacidad</Link></li>
               <li className="footer__widget--menu__list"><Link className="footer__widget--menu__text" to="/">Frecuentemente</Link></li>

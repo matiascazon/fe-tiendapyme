@@ -8,7 +8,7 @@ import ProductoDetallePage from './pages/ProductoDetallePage'
 import NotFound from './pages/NotFound'
 import CarritoProvider from './context/contextCarrito'
 import {loader as loaderProducto} from './pages/ProductoDetallePage'
-
+import Wishlist from './pages/Wishlist'
 
 const router = createBrowserRouter([
   {
@@ -33,8 +33,11 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound/>
+      },
+      {
+        path: "/deseados",
+        element: <Wishlist/>
       }
-
 
     ]
   }

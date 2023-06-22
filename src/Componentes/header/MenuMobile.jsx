@@ -97,6 +97,7 @@ const MenuMobile = () => {
                                 <li className="offcanvas__sub_menu_li"><a href="404.html" className="offcanvas__sub_menu_item">Error Page</a></li>
                             </ul> */}
                         </li>
+                        <li className='offcanvas__menu_li'><Link className="offcanvas__menu_item" to={`/deseados`} onClick={() => {setOpen(false)}}>Lista de Deseos</Link></li>
                         <li className="offcanvas__menu_li"><a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Nosotros</a></li>
                         <li className="offcanvas__menu_li"><a className="offcanvas__menu_item" href="/" onClick={() => {setOpen(false)}}>Contáctanos</a></li>
                     </ul>
