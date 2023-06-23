@@ -2,8 +2,6 @@ import React from 'react'
 import './../../assets/css/vendor/bootstrap.min.css';
 import './../../assets/css/style.css';
 import Carrito from '../carrito/Carrito';
-import Menu from './Menu'
-import MenuMobile from "./MenuMobile";
 import { Link } from "react-router-dom";
 
 const Toolbar = () => {
