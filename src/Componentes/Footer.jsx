@@ -11,10 +11,10 @@ import Footer_copy from './footer/Footer_copy';
 
 const Footer = () => {
   return (
-    <footer class="footer__section footer__bg">
-        <div class="container-fluid">
-            <div class="main__footer">
-                <div class="row">
+    <footer className="footer__section footer__bg">
+        <div className="container-fluid">
+            <div className="main__footer">
+                <div className="row">
                     {/* Primera Columna Footer */}
                     <Footer_col_1/>
                     {/* Segunda Columna Footer */}
