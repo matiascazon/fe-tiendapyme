@@ -3,7 +3,6 @@ import './../../assets/css/vendor/bootstrap.min.css';
 import './../../assets/css/style.css';
 import Carrito from '../carrito/Carrito';
 import Menu from './Menu'
-import Icons from "./header_icon/Icons";
 import MenuMobile from "./MenuMobile";
 import { Link } from "react-router-dom";
 
