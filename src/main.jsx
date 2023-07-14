@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound'
 import CarritoProvider from './context/contextCarrito'
 import {loader as loaderProducto} from './pages/ProductoDetallePage'
 import Wishlist from './pages/Wishlist'
+import Registro from './pages/Registro'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login/>
+      },
+      {
+        path: "/registro",
+        element: <Registro/>
       },
       {
         path: "/productos/:productoId",
