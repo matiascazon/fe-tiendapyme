@@ -3,33 +3,44 @@ import '../../assets/css/plugins/glightbox.min.css';
 import '../../assets/css/vendor/bootstrap.min.css';
 import '../../assets/css/style.css';
 import {contextoCarrito} from './../../context/contextCarrito'
+import { obtenerTienda } from '../../data/tienda';
 
 const ProductoDetalle = ({producto}) => {
     
-    const [cantidad,setCantidad] = useState(1)
+    const [compra_cantidad,setCompra_Cantidad] = useState(1)
     const {agregarProducto,carrito} = useContext(contextoCarrito)
 
-    const agregarProductoHanlder = () => {
-        const nuevoProducto = {
-            id: producto.id,
-            nombre: producto.producto_nombre,
-            precio: producto.producto_valor,
-            imagen: producto.producto_imagen,
+    const agregarProductoHanlder = async () => {
+
+        const tienda = await obtenerTienda(producto.producto_tienda) 
+        
+        const nuevoProducto = { //nuevo producto en el carrito
+            // id_operacion: `t${producto.producto_tienda}${producto.id}${Date.now()}`, //t+id_tienda+id_producto+fecha
+            compra_producto: producto.id,
+            compra_producto_nombre: producto.producto_nombre,
+            compra_precio: producto.producto_valor,
+            compra_producto_img: producto.producto_imagen,
+            compra_comprador: '1ab0d5da-43b9-46c2-a7e1-bd934651fe1e', //id del comprador
+            compra_comprador_nombre: 'Ignacio Gareca',
+            compra_tienda: producto.producto_tienda, //id de la tienda
+            compra_tienda_nombre: tienda.tienda_nombre,
+            compra_operacion: null
         }
-        const existeProducto = carrito.find(item => item.id === nuevoProducto.id)
-        setCantidad(existeProducto ? existeProducto.cantidad += 1 : cantidad) 
-        agregarProducto(nuevoProducto,cantidad)
-        setCantidad(1)
+
+        const existeProducto = carrito.find(item => item.compra_producto === nuevoProducto.compra_producto) //verificar si el producto ya existe en el carrito comparando el id del producto
+        setCompra_Cantidad(existeProducto ? existeProducto.compra_cantidad += 1 : compra_cantidad) 
+        agregarProducto(nuevoProducto,compra_cantidad)
+        setCompra_Cantidad(1)
     }
 
     const decrementarCantidadHandler = () => {
-        if(cantidad > 1){
-            setCantidad(cantidad - 1)
+        if(compra_cantidad > 1){
+            setCompra_Cantidad(compra_cantidad - 1)
         }
     }
     const incrementarCantidadHandler = () => {
-        if(cantidad < 10){
-            setCantidad(cantidad + 1)
+        if(compra_cantidad < 10){
+            setCompra_Cantidad(compra_cantidad + 1)
         }
     }
 
@@ -203,7 +214,7 @@ const ProductoDetalle = ({producto}) => {
                                         <div className="quantity__box">
                                             <button type="button" className="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value" onClick={decrementarCantidadHandler}>-</button>
                                             <label>
-                                                <input type="number" disabled className="quantity__number quickview__value--number" value={cantidad} />
+                                                <input type="number" disabled className="quantity__number quickview__value--number" value={compra_cantidad} />
                                             </label>
                                             <button type="button" className="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" onClick={incrementarCantidadHandler}>+</button>
                                         </div>
