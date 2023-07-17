@@ -13,13 +13,13 @@ const CarritoReducer = (state, action) => {
     case 'AGREGAR_PRODUCTO':
       const nuevoProducto = action.payload;
 
-      const existeProducto = state.carrito.find((item) => item.id === nuevoProducto.id);
+      const existeProducto = state.carrito.find((item) => item.compra_producto === nuevoProducto.compra_producto);
 
       const productosCarrito = existeProducto
-        ? state.carrito.map((item) => (item.id === existeProducto.id ? nuevoProducto : item))
+        ? state.carrito.map((item) => (item.compra_producto === existeProducto.compra_producto ? nuevoProducto : item))
         : [...state.carrito, nuevoProducto];
 
-      const precioTotalAgregar = productosCarrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+      const precioTotalAgregar = productosCarrito.reduce((total, producto) => total + producto.compra_precio * producto.compra_cantidad, 0);
 
       return { ...state, carrito: productosCarrito, precioTotal: precioTotalAgregar };
 
@@ -28,40 +28,40 @@ const CarritoReducer = (state, action) => {
 
     case 'ELIMINAR_PRODUCTO':
       const productoEliminarId = action.payload;
-      const nuevoEstado = state.carrito.filter((producto) => producto.id !== productoEliminarId);
+      const nuevoEstado = state.carrito.filter((producto) => producto.compra_producto !== productoEliminarId);
 
-      const precioTotalEliminar = nuevoEstado.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+      const precioTotalEliminar = nuevoEstado.reduce((total, producto) => total + producto.compra_precio * producto.compra_cantidad, 0);
 
       return { ...state, carrito: nuevoEstado, precioTotal: precioTotalEliminar };
 
     case 'INCREMENTAR_CANTIDAD':
       const id = action.payload;
-      const productoEnCarritoId = state.carrito.findIndex((producto) => producto.id === id);
+      const productoEnCarritoId = state.carrito.findIndex((producto) => producto.compra_producto === id);
       const nuevoCarrito = [...state.carrito];
 
       if (productoEnCarritoId !== -1) {
-        nuevoCarrito[productoEnCarritoId].cantidad++;
+        nuevoCarrito[productoEnCarritoId].compra_cantidad++;
       }
 
-      const precioTotalIncrementar = nuevoCarrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+      const precioTotalIncrementar = nuevoCarrito.reduce((total, producto) => total + producto.compra_precio * producto.compra_cantidad, 0);
 
       return { ...state, carrito: nuevoCarrito, precioTotal: precioTotalIncrementar };
 
     case 'DECREMENTAR_CANTIDAD':
       const id1 = action.payload;
-      const productoEnCarritoId1 = state.carrito.findIndex((producto) => producto.id === id1);
+      const productoEnCarritoId1 = state.carrito.findIndex((producto) => producto.compra_producto === id1);
       const nuevoCarrito1 = [...state.carrito];
 
-      if (productoEnCarritoId1 !== -1 && nuevoCarrito1[productoEnCarritoId1].cantidad > 1) {
-        nuevoCarrito1[productoEnCarritoId1].cantidad -= 1;
+      if (productoEnCarritoId1 !== -1 && nuevoCarrito1[productoEnCarritoId1].compra_cantidad > 1) {
+        nuevoCarrito1[productoEnCarritoId1].compra_cantidad -= 1;
       }
 
-      const precioTotalDecrementar = nuevoCarrito1.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+      const precioTotalDecrementar = nuevoCarrito1.reduce((total, producto) => total + producto.compra_precio * producto.compra_cantidad, 0);
 
       return { ...state, carrito: nuevoCarrito1, precioTotal: precioTotalDecrementar };
 
     case 'SET_CARRITO':
-      const precioTotalSet = action.payload.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+      const precioTotalSet = action.payload.reduce((total, producto) => total + producto.compra_precio * producto.compra_cantidad, 0);
 
       return {
         ...state,
@@ -97,8 +97,8 @@ const CarritoProvider = ({children}) => {
       localStorage.setItem('precioTotal', JSON.stringify(state.precioTotal));
     }, [state.precioTotal]);
 
-    const agregarProducto = (productoCarrito,cantidad) => {
-        dispatch({ type: 'AGREGAR_PRODUCTO', payload: {...productoCarrito,cantidad}})
+    const agregarProducto = (productoCarrito,compra_cantidad) => {
+        dispatch({ type: 'AGREGAR_PRODUCTO', payload: {...productoCarrito,compra_cantidad}})
     }
 
     const limpiarCarrito = () => {

@@ -5,12 +5,13 @@ import { registrarComprador } from '../../data/comprador'
 
 const FormularioRegister = () => {
     const formInicial = {
-        comprador_dni: '',
-        comprador_pass: '',
-        comprador_email: '',
-        comprador_nombre: '',
+        first_name: '',
+        last_name: '',
+        email: '',
+        password: '',
         comprador_celular: '',
-        comprador_apellido: '',
+        comprador_dni: '',
+        role: '844cde7f-c493-42a0-bb93-ce3cd5908712'
     }
     
     const validarForm = (form) => {//validaciones
@@ -21,24 +22,24 @@ const FormularioRegister = () => {
         const regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
         
         //campo nombre
-        if(!form.comprador_nombre.trim()){
-            errores.comprador_nombre = "El campo 'Nombre' es requerido"
-        }else if(!regexNyA.test(form.comprador_nombre.trim())){
-            errores.comprador_nombre = "El campo 'Nombre' solo acepta letras y espacios en blanco"
+        if(!form.first_name.trim()){
+            errores.first_name = "El campo 'Nombre' es requerido"
+        }else if(!regexNyA.test(form.first_name.trim())){
+            errores.first_name = "El campo 'Nombre' solo acepta letras y espacios en blanco"
         }
         
         //campo apellido
-        if(!form.comprador_apellido.trim()){
-            errores.comprador_apellido = "El campo 'Apellido' es requerido"
-        }else if(!regexNyA.test(form.comprador_apellido.trim())){
-            errores.comprador_apellido = "El campo 'Apellido' solo acepta letras y espacios en blanco"
+        if(!form.last_name.trim()){
+            errores.last_name = "El campo 'Apellido' es requerido"
+        }else if(!regexNyA.test(form.last_name.trim())){
+            errores.last_name = "El campo 'Apellido' solo acepta letras y espacios en blanco"
         }
         
         //campo email
-        if(!form.comprador_email.trim()){
-            errores.comprador_email = "El campo 'Correo electrónico' es requerido"
-        }else if(!regexEmail.test(form.comprador_email.trim())){
-            errores.comprador_email = "El campo 'Correo elctrónico' no tiene el formato adecuado"
+        if(!form.email.trim()){
+            errores.email = "El campo 'Correo electrónico' es requerido"
+        }else if(!regexEmail.test(form.email.trim())){
+            errores.email = "El campo 'Correo elctrónico' no tiene el formato adecuado"
         }
         
         //campo dni
@@ -58,10 +59,10 @@ const FormularioRegister = () => {
         }
         
         //campo contraseña
-        if(!form.comprador_pass.trim()){
-            errores.comprador_pass = "El campo 'Contraseña' es requerido"
-        }else if(!regexPass.test(form.comprador_pass)){
-            errores.comprador_pass = "La contraseña debe tener al menos 8 caracteres, una letra mínuscula, una letra mayúscula y un número"
+        if(!form.password.trim()){
+            errores.password = "El campo 'Contraseña' es requerido"
+        }else if(!regexPass.test(form.password)){
+            errores.password = "La contraseña debe tener al menos 8 caracteres, una letra mínuscula, una letra mayúscula y un número"
             
         }
         return errores
@@ -92,21 +93,21 @@ const FormularioRegister = () => {
             </div>
             <form className="account__login--inner" onSubmit={handleSubmit} method='post'>
                 <label>
-                    <input className="account__login--input" placeholder="Nombre" type="text" name="comprador_nombre" id='comprador_nombre'
-                        value={form.comprador_nombre} 
+                    <input className="account__login--input" placeholder="Nombre" type="text" name="first_name" id='first_name'
+                        value={form.first_name} 
                         onChange={handleChange} 
                         onBlur={handleBlur}
                     />
                 </label>
-                {errores.comprador_nombre && <p>{errores.comprador_nombre}</p>}
+                {errores.fist_name && <p>{errores.fist_name}</p>}
                 <label>
-                    <input className="account__login--input" placeholder="Apellido" type="text" name='comprador_apellido' id='comprador_apellido'
-                        value={form.comprador_apellido} 
+                    <input className="account__login--input" placeholder="Apellido" type="text" name='last_name' id='last_name'
+                        value={form.last_name} 
                         onChange={handleChange} 
                         onBlur={handleBlur}
                     />
                 </label>
-                {errores.comprador_apellido && <p>{errores.comprador_apellido}</p>}
+                {errores.last_name && <p>{errores.last_name}</p>}
                 <label>
                     <input className="account__login--input" placeholder="Dni" type="text" name='comprador_dni' minLength={7} maxLength={8} id='comprador_dni'
                         value={form.comprador_dni} 
@@ -124,23 +125,23 @@ const FormularioRegister = () => {
                 </label>
                 {errores.comprador_celular && <p>{errores.comprador_celular}</p>}
                 <label>
-                    <input className="account__login--input" placeholder="Correo electrónico" type="email" name='comprador_email' id='comprador_email'
-                        value={form.comprador_email} 
+                    <input className="account__login--input" placeholder="Correo electrónico" type="email" name='email' id='email'
+                        value={form.email} 
                         onChange={handleChange} 
                         onBlur={handleBlur}
                     />
                 </label>
-                {errores.comprador_email && <p>{errores.comprador_email}</p>}
+                {errores.email && <p>{errores.email}</p>}
                 <label>
-                    <input className="account__login--input" placeholder="Contraseña" type="password" name='comprador_pass' minLegth={8} id='comprador_pass'
-                        value={form.comprador_pass} 
+                    <input className="account__login--input" placeholder="Contraseña" type="password" name='password' minLegth={8} id='password'
+                        value={form.password} 
                         onChange={handleChange} 
                         onBlur={handleBlur}
                     />
                 </label>
-                {errores.comprador_pass && <p>{errores.comprador_pass}</p>}
+                {errores.password && <p>{errores.password}</p>}
                 <button className="account__login--btn primary__btn mb-10" type="submit">Registrarse</button>
-                <p className="account__login--signup__text">Ya tenés una cuenta?<Link to="/login">{' '}Inicia Sesion</Link></p>
+                <p className="account__login--signup__text">Ya tenés una cuenta? <br /> <Link to="/login">Inicia Sesion</Link></p>
 
                 {/* <div className="account__login--remember position__relative">
                     <input className="checkout__checkbox--input" id="check2" type="checkbox"/>
