@@ -6,8 +6,8 @@ import Carrito from './../carrito/Carrito'
 import MenuMobile from "./MenuMobile";
 import { Link } from "react-router-dom";
 import Toolbar from "./Toolbar";
-
-
+import logoHeader from './../../assets/img/logo/logo_completo.jpg'
+// src/assets/img/logo/logo_completo.jpg
 
 
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
                     <MenuMobile/>
 
                     <div className="main__logo">   
-                        <Link className="main__logo--link" to={`/`}> <img src="src/assets/img/logo/logo_completo.jpg" alt="" /></Link>
+                        <Link className="main__logo--link" to={`/`}> <img src={logoHeader} alt="Logo tienda pyme" /></Link>
                     </div>
                     
                     <Menu/>

@@ -33,7 +33,7 @@ const Index = () => {
         <Section_3
           productos={productosPrincipal}
         ></Section_3>
-        <Section_4></Section_4>
+        {/* <Section_4></Section_4> */}
         <Section_5
           productos={productos}
         ></Section_5>

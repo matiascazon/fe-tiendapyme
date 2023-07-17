@@ -55,7 +55,7 @@ const ProductoDetalle = ({producto}) => {
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide">
                                         <div className="product__media--preview__items">
-                                            <a className="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product1.webp"><img className="product__media--preview__items--img" src={`http://vps-3326270-x.dattaweb.com:8055/assets/${producto.producto_imagen}`} alt="product-media-img"/></a>
+                                            <a className="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href=""><img className="product__media--preview__items--img" src={`http://vps-3326270-x.dattaweb.com:8055/assets/${producto.producto_imagen}`} alt="product-media-img"/></a>
                                             <div className="product__media--view__icon">
                                                 <a className="product__media--view__icon--link glightbox" href="assets/img/product/big-product1.webp" data-gallery="product-media-preview">
                                                     <svg className="product__media--view__icon--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="32"></path><path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32" d="M338.29 338.29L448 448"></path></svg>
@@ -64,7 +64,7 @@ const ProductoDetalle = ({producto}) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="swiper-slide">
+                                    {/* <div className="swiper-slide">
                                         <div className="product__media--preview__items">
                                             <a className="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product2.webp"><img className="product__media--preview__items--img" src="assets/img/product/big-product2.webp" alt="product-media-img"/></a>
                                             <div className="product__media--view__icon">
@@ -118,10 +118,10 @@ const ProductoDetalle = ({producto}) => {
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
-                            <div className="product__media--nav swiper">
+                            {/* <div className="product__media--nav swiper">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide">
                                         <div className="product__media--nav__items">
@@ -156,7 +156,7 @@ const ProductoDetalle = ({producto}) => {
                                 </div>
                                 <div className="swiper__nav--btn swiper-button-next"></div>
                                 <div className="swiper__nav--btn swiper-button-prev"></div>
-                            </div>
+                            </div> */}
                             
                         </div>
                     </div>   

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import BotonMenuMobile from './BotonMenuMobile'
 import { Link } from 'react-router-dom';
-
+import logoMenu from './../../assets/img/logo/logo_completo_1.jpg'
+//src/assets/img/logo/logo_completo_1.jpg
 const MenuMobile = () => {
     const [open,setOpen] = useState(false)
     // useEffect(() => { //bloquea el scroll desde el css
@@ -24,9 +25,9 @@ const MenuMobile = () => {
             <div className="offcanvas__inner">
                 <div className="offcanvas__logo">
                     <a className="offcanvas__logo_link" href="index.html">
-                        <img src="src/assets/img/logo/logo_completo_1.jpg" alt="TiendaPyme Logo"/>
+                        <img src={logoMenu} alt="TiendaPyme Logo"/>
                     </a>
-                    <button className="offcanvas__close--btn" aria-label="offcanvas close btn" onClick={() => {open ? setOpen(false) : setOpen(true)}}>close</button>
+                    {/* <button className="offcanvas__close--btn" aria-label="offcanvas close btn" onClick={() => {open ? setOpen(false) : setOpen(true)}}>close</button> */}
                 </div>
                 <nav className="offcanvas__menu">
                     <ul className="offcanvas__menu_ul">

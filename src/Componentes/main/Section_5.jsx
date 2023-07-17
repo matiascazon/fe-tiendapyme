@@ -33,7 +33,7 @@ const Section_5 = ({productos}) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3 col-md-8  product__col--width__4">
+                {/* <div className="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3 col-md-8  product__col--width__4">
                     <div className="deals__banner--thumbnail">
                         <a className="deals__banner--thumbnail__link display-block position__relative" href="shop.html"><img className="deals__banner--thumbnail__img display-block" src="../../src/assets/img/banner/banner9.webp" alt="deals-thumbnail-img"/>
                             <div className="deals__banner--content text-center">
@@ -44,7 +44,7 @@ const Section_5 = ({productos}) => {
                             </div>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>

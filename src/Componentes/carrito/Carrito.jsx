@@ -8,7 +8,7 @@ import { registrarCompra } from '../../data/compra'
 const Carrito = () => {
     const[open,setOpen] = useState(false)
 
-    const {carrito,obtenerPrecioTotal} = useContext(contextoCarrito)
+    const {carrito,obtenerPrecioTotal,limpiarCarrito} = useContext(contextoCarrito)
 
     useEffect(() => { //bloquea el scroll desde el css
         if(open){
@@ -29,8 +29,8 @@ const Carrito = () => {
                 ...compra,
                 compra_operacion : `${compra.compra_comprador.slice(0,4)}${Date.now()}`
             }
-            
-        )))
+            )))
+        limpiarCarrito()
     }
 
     return (
