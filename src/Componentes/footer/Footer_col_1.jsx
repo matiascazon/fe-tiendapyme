@@ -14,7 +14,7 @@ function Footer_col_1() {
                 </svg>
             </h2>
             <div className="footer__widget--inner"> 
-                <a className="footer__logo" href="index.html"><img src="/src/assets/img/logo/logo.png" alt="TiendaPyme-logo"/></a>
+                <a className="footer__logo" href="index.html"><img src="./src/assets/img/logo/logo.png" alt="TiendaPyme-logo"/></a>
                 {/* <p className="footer__widget--desc">Ut enim ad minim veniam, quis <br/> nostrud exercitation ullamco laboris <br/> nisi ut aliquip ex ea commodo.</p> */}
                 <div className="footer__social">
                     <ul className="social__shear d-flex">
