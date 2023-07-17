@@ -37,8 +37,8 @@ const Header = () => {
                     
                     <MenuMobile/>
 
-                    <div className="main__logo">
-                        <h1 className="main__logo--title"><Link className="main__logo--link" to={`/`}>Tienda Pyme</Link></h1>
+                    <div className="main__logo" width={"50"}>   
+                        <Link className="main__logo--link" to={`/`}> <img src="src/assets/img/logo/logo_completo.jpg" alt="" /></Link>
                     </div>
                     
                     <Menu/>

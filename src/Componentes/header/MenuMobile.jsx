@@ -24,7 +24,7 @@ const MenuMobile = () => {
             <div className="offcanvas__inner">
                 <div className="offcanvas__logo">
                     <a className="offcanvas__logo_link" href="index.html">
-                        <img src="assets/img/logo/nav-log.webp" alt="TiendaPyme Logo"/>
+                        <img src="src/assets/img/logo/logo_completo_1.jpg" alt="TiendaPyme Logo"/>
                     </a>
                     <button className="offcanvas__close--btn" aria-label="offcanvas close btn" onClick={() => {open ? setOpen(false) : setOpen(true)}}>close</button>
                 </div>

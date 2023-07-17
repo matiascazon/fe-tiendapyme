@@ -2,7 +2,7 @@
 /* CSS INDEXING */
 :root {
   --primary-color: #121a25;
-  --secondary-color: #f51c1c;
+  --secondary-color: #cc0066;
   --secondary-color2: #4f5ac2;
   --yellow-color: #ffc107;
   --text-gray-color: #666666;
@@ -31,7 +31,7 @@
 }
 
 .color-scheme-1 {
-  --secondary-color: #f51c1c;
+  --secondary-color: #cc0066;
 }
 
 .color-scheme-2 {
@@ -2345,7 +2345,7 @@ body.overlay__active,
   height: 100%;
 }
 
-/* Offacnvas Logo */
+/* Offacnvas Logo Logo del menu responsivo*/
 .offcanvas__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2355,8 +2355,11 @@ body.overlay__active,
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 15px;
+          justify-content: center;
+  /* padding: 20px 15px; */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .offcanvas__close--btn {
@@ -2652,6 +2655,12 @@ body.overlay__active,
 
 .main__logo--title {
   line-height: 2rem;
+}
+/* logo de inicio */
+.main__logo {
+  width: 150px;
+  height: 100px;
+  padding-top: 25px;
 }
 
 .header__topbar {
