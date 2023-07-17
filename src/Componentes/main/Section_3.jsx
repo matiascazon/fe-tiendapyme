@@ -23,25 +23,6 @@ const Section_3 = ({productos}) => {
                                     producto={producto}
                                 />
                             ))}
-                            {productos.map((producto) => (
-                                <CartaProducto
-                                    key={producto.id}
-                                    producto={producto}
-                                />
-                            ))}
-                            {productos.map((producto) => (
-                                <CartaProducto
-                                    key={producto.id}
-                                    producto={producto}
-                                />
-                            ))}
-                            {productos.map((producto) => (
-                                <CartaProducto
-                                    key={producto.id}
-                                    producto={producto}
-                                />
-                            ))}
-                            
                         </div>
                     </div>
                 </div>

@@ -16,25 +16,6 @@ const Section_2 = ({productos}) => {
                         producto={producto}
                     />
                 ))}
-                {productos.map(producto => (
-                    <CartaProductoBanner
-                        key={producto.id}
-                        producto={producto}
-                    />
-                ))}
-                {productos.map(producto => (
-                    <CartaProductoBanner
-                        key={producto.id}
-                        producto={producto}
-                    />
-                ))}
-                {productos.map(producto => (
-                    <CartaProductoBanner
-                        key={producto.id}
-                        producto={producto}
-                    />
-                ))}
-               
             </div>
         </div>
     </section>

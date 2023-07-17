@@ -26,7 +26,7 @@ const Index = () => {
   const productosBanner = productos.filter(producto => producto.producto_posicion === 'banner')
   return (
     <main className="main__content_wrapper">
-        <Section_1></Section_1>
+        {/* <Section_1></Section_1> */}
         <Section_2
           productos={productosBanner}
         ></Section_2>
