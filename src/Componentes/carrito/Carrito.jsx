@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import BotonCarrito from './BotonCarrito'
 import ProductoCarrito from './ProductoCarrito'
 import { contextoCarrito } from '../../context/contextCarrito'
+import { registrarCompra } from '../../data/compra'
 
 
 const Carrito = () => {
@@ -21,6 +22,17 @@ const Carrito = () => {
         open ? setOpen(false) : setOpen(true)
     }
     
+
+    const handleRegistrarCompra = () => {
+        registrarCompra(carrito.map((compra) => (
+            {
+                ...compra,
+                compra_operacion : `${compra.compra_comprador.slice(0,4)}${Date.now()}`
+            }
+            
+        )))
+    }
+
     return (
     <>
         <BotonCarrito
@@ -43,7 +55,7 @@ const Carrito = () => {
             <div className="minicart__product">
                 {carrito.map(producto => (
                     <ProductoCarrito
-                        key={producto.id}
+                        key={producto.compra_producto}
                         producto={producto}
                     />
                 ))}
@@ -64,7 +76,7 @@ const Carrito = () => {
             </div>
             <div className="minicart__button d-flex justify-content-center">
                 <a className="primary__btn minicart__button--link" href="#">Ver carrito</a>
-                <a className="primary__btn minicart__button--link" href="#">Verificar</a>
+                <a className="primary__btn minicart__button--link" href="#" onClick={handleRegistrarCompra}>Comprar</a>
             </div>
         </div>
     </>

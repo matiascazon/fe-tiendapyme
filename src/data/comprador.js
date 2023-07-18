@@ -1,6 +1,6 @@
 export const registrarComprador = async (datosComprador, setLoading, setRespuesta) => {
     try {
-      const respuesta = await fetch('http://vps-3326270-x.dattaweb.com:8055/items/Comprador', {
+      const respuesta = await fetch('http://vps-3326270-x.dattaweb.com:8055/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -20,3 +20,11 @@ export const registrarComprador = async (datosComprador, setLoading, setRespuest
     }
 };
   
+
+
+//autenticacion de usuario comprador
+
+import { Directus } from '@directus/sdk';
+
+const directus = new Directus('http://back.tiendapyme.com.ar/');
+
