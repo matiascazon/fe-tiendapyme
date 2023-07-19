@@ -26,5 +26,14 @@ export const registrarComprador = async (datosComprador, setLoading, setRespuest
 
 import { Directus } from '@directus/sdk';
 
-const directus = new Directus('http://back.tiendapyme.com.ar/');
+const directus = new Directus('http://vps-3326270-x.dattaweb.com:8055');
 
+export const obtenerUsuario = async () => {
+    try {
+        const respuesta = await directus.users.me.read();
+        console.log(respuesta)
+        return respuesta
+    } catch (error) {
+        console.log('error', error);
+    }
+}

@@ -5,6 +5,7 @@ import { contextoCarrito } from '../../context/contextCarrito'
 import { registrarCompra } from '../../data/compra'
 
 
+
 const Carrito = () => {
     const[open,setOpen] = useState(false)
 
@@ -23,7 +24,7 @@ const Carrito = () => {
     }
     
 
-    const handleRegistrarCompra = () => {
+    const handleRegistrarCompra = async () => {
         registrarCompra(carrito.map((compra) => (
             {
                 ...compra,

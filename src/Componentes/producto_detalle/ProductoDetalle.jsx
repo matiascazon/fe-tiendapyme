@@ -4,24 +4,27 @@ import '../../assets/css/vendor/bootstrap.min.css';
 import '../../assets/css/style.css';
 import {contextoCarrito} from './../../context/contextCarrito'
 import { obtenerTienda } from '../../data/tienda';
+import { obtenerUsuario } from '../../data/comprador';
+
 
 const ProductoDetalle = ({producto}) => {
     
     const [compra_cantidad,setCompra_Cantidad] = useState(1)
     const {agregarProducto,carrito} = useContext(contextoCarrito)
-
     const agregarProductoHanlder = async () => {
 
-        const tienda = await obtenerTienda(producto.producto_tienda) 
+        const tienda = await obtenerTienda(producto.producto_tienda)
         
+        const comprador = await obtenerUsuario() //obtener el usuario actual
+        // console.log(compra_comprador)
         const nuevoProducto = { //nuevo producto en el carrito
             // id_operacion: `t${producto.producto_tienda}${producto.id}${Date.now()}`, //t+id_tienda+id_producto+fecha
             compra_producto: producto.id,
             compra_producto_nombre: producto.producto_nombre,
             compra_precio: producto.producto_valor,
             compra_producto_img: producto.producto_imagen,
-            compra_comprador: '1ab0d5da-43b9-46c2-a7e1-bd934651fe1e', //id del comprador
-            compra_comprador_nombre: 'Ignacio Gareca',
+            compra_comprador: comprador.id, //id del comprador
+            compra_comprador_nombre: `${comprador.first_name} ${comprador.last_name}`,
             compra_tienda: producto.producto_tienda, //id de la tienda
             compra_tienda_nombre: tienda.tienda_nombre,
             compra_operacion: null
